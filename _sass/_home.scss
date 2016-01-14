@@ -1,0 +1,130 @@
+/* -----------------------------
+		Homepage
+----------------------------- */ 
+
+.home-section--hero {
+
+	height: 450px;
+	background-color: #fff;
+
+	background-size: auto 100%;
+    background-repeat: no-repeat;
+
+    background-image: url('../img/header-image.jpg');
+
+
+    .tagline {
+
+    	color: #000;
+
+    	width: auto;
+
+		background-color: rgba(255, 255, 255, 0.7);
+
+
+
+		padding: 20px;
+
+		position: absolute;
+		right: 2%;
+
+		top: 100px;
+
+		width: 50%;
+
+		@media screen and (max-width: 700px) {
+			width: 80%;
+			right: 10%;
+
+		}
+		
+		@media screen and (max-width: 500px) {
+			font-size: 20px;
+		}
+
+
+    }
+}
+
+
+
+.item-list-item--projects {
+
+
+	.prject-image-container {
+		display: block;
+		height: 200px;
+		width: 100%;
+		position: relative;
+		margin-bottom: 10px;
+		overflow: hidden;
+
+		img {
+			position: absolute;
+			width: 100%;
+			min-height: 100%;
+			height: auto;
+		}
+
+	}
+
+
+	
+}
+
+
+
+
+
+.item-list-item--work {
+
+	position: relative;
+	overflow: hidden;
+	height: 230px;
+
+
+	.cover-title {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		z-index: 1;
+		color: #fff;
+		text-align: center;
+	}
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		height: 230px;
+		width: 100%;
+
+		object-fit: cover;
+	}
+}
+
+
+.item-list-item--work.showTitle  {
+
+	background-color: $theme;
+	transition: background-color 0.5s;
+
+	img {
+		opacity: 0;
+	}
+}
+
+.item-list-item--work.hideTitle  {
+
+	background-color: transparent;
+	transition: background-color 0.5s;
+
+	img {
+		opacity: 1;
+
+	}
+}
+

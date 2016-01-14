@@ -1,0 +1,30 @@
+/* -----------------------------
+    	Vars
+----------------------------- */ 
+
+
+$theme: rgb(103, 179, 221);
+
+$text-color: rgb(100, 100, 100);
+
+$grey: rgb(220, 220, 220);
+
+
+.container {
+	margin: 0 auto;
+	width: 85%;
+	max-width: 800px;
+	position: relative;
+}
+
+.conainter-min-height {
+	min-height: 80vh;
+}
+
+
+
+/* Z-Index */
+
+nav {
+	z-index: 4;
+}

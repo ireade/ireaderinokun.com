@@ -1,0 +1,14 @@
+# Site settings
+title: Ire Aderinokun
+email: ire@ireaderinokun.com
+description: Ire Aderinokun is a UI Designer and Front-End Developer
+baseurl: "" 
+url: "http://ireaderinokun.com" 
+twitter_username: ireaderinokun
+github_username:  ireade
+
+# Build settings
+markdown: kramdown
+
+sass:
+    style: :compressed

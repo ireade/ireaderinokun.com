@@ -1,0 +1,145 @@
+/* -----------------------------
+    Type
+----------------------------- */ 
+
+
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('../font/proximanova-light-webfont.eot') format('embedded-opentype'),
+         url('../font/proximanova-light-webfont.ttf') format('truetype'),
+         url('../font/proximanova-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ProximaNova';
+    src: url('../font/proximanova-semibold-webfont.eot') format('embedded-opentype'),
+         url('../font/proximanova-semibold-webfont.ttf') format('truetype'),
+         url('../font/proximanova-semibold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+$font-family: 'ProximaNova', 'Proxima Nova', 'Helvetica Neue', sans-serif;
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.6;
+    font-family: $font-family;
+    color: $text-color;
+
+    background-color: rgb(250, 250, 250);
+}
+
+h1 {
+    font-size: 3.3rem;
+    margin-bottom: 3rem;
+    font-weight: 300;
+
+    @media screen and (max-width: 600px) {
+        font-size: 2.8rem;
+    }
+}
+
+h1.work-title {
+    border-bottom: 2px solid $grey;
+}
+
+h1 .live-site a {
+    font-size: 1.4rem;
+    line-height: 5rem;
+    color: $theme;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid $grey;
+}
+
+h3 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+strong {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+    color: $theme; 
+}
+
+.link-external::after {
+    font-family: 'fontawesome';
+    font-size: 1.4rem;
+    padding-left: 1rem;
+    content: "\f08e";
+}
+
+h1 a,
+h2 a {
+    color: $text-color;
+}
+
+
+p {
+    margin-bottom: 1rem;
+}
+
+.asterisk {
+    font-size: 1.8rem;   
+}
+
+span.theme {
+    color: $theme;
+}
+
+blockquote {
+    border-left: 5px solid $theme;
+    padding: 10px 20px;
+    font-size: 1.8rem;
+    font-style: italic;
+    quotes: "“" "”" "‘" "’";
+    margin-bottom: 2rem;
+
+
+    .author {
+        display: block;
+        font-style: normal;
+        font-size: 1.4rem;
+        margin-top: 1rem;
+    }
+
+}
+
+blockquote:before {
+    content: open-quote;
+}
+
+footer {
+    font-size: 1.4rem;
+}
+
+
+.heart {
+    color: red;
+    padding: 0 5px;
+}
+
+
+

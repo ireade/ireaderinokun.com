@@ -1,0 +1,142 @@
+/* -----------------------------
+		Work
+----------------------------- */ 
+
+
+
+
+.page-work {
+
+	.work-title {
+		margin-top: 5rem;
+	}
+
+	.live-site {
+		float: right;
+
+		@media screen and (max-width: 600px) {
+			display: block;
+			float: none;
+			text-align: left;
+			margin-top: -1rem;
+		}
+	}
+}
+
+
+.work-img {
+	width: 100%;
+	height: auto;
+	display: block;
+
+
+	margin: 2em auto;
+	padding-bottom: 2em;
+}
+
+.alt-img {
+	width: 100%;
+	max-width: 620px;
+	height: auto;
+	display: block;
+	margin: 0 auto 2em;
+}
+
+
+
+.work-img.mobile {
+	max-width: 300px;
+}
+
+
+.page-visit-live-site {
+	padding-bottom: 1em;
+	display: inline-block;
+}
+
+.images {
+
+	position: relative;
+	height: 310px;
+	
+	overflow-x: hidden;
+	overflow-y: hidden;
+
+	margin-bottom: 2em;
+
+	max-width: 620px;
+	margin: 0 auto 2em;
+
+	//border: 1px solid red;
+
+	
+	.iphone {
+		width: 20%;
+		height: auto;
+
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+	.macbook {
+		width: 85%;
+		height: auto;
+
+		position: absolute;
+
+		right: 0;
+		bottom: 0;
+	}
+
+
+	@media screen and (max-width: 770px) {
+		height: 270px;
+	}
+
+
+
+	@media screen and (max-width: 700px) {
+		height: 250px;
+	}
+
+	@media screen and (max-width: 650px) {
+		height: 230px;
+	}
+
+	@media screen and (max-width: 600px) {
+		height: 240px;
+	}
+
+	@media screen and (max-width: 550px) {
+		height: 230px;
+	}
+
+	@media screen and (max-width: 500px) {
+
+		.iphone {
+			display: none;
+		}
+		
+		.macbook {
+			width: 100%;
+		}
+	}
+
+	@media screen and (max-width: 450px) {
+		height: 210px;
+	}
+
+	@media screen and (max-width: 400px) {
+		height: 190px;
+	}
+
+	@media screen and (max-width: 350px) {
+		height: 160px;
+	}
+
+
+	.alternate-img {
+		height: 100%;
+		width: auto;
+	}
+}
