@@ -11,6 +11,7 @@
     background-repeat: no-repeat;
 
     background-image: url('../img/header-image.jpg');
+    position: relative;
 
 
     .tagline {
@@ -44,6 +45,42 @@
 
 
     }
+
+
+	position: fixed;
+	top: 5px;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+    
+}
+
+
+
+
+.main-container {
+	position: relative;
+	z-index: 2;
+	margin-top: 350px;
+	
+}
+
+.triangle-svg {
+	width: 100%;
+
+	// position: absolute;
+	// top: 0;
+
+	// border: 1px solid red;
+
+	g {
+		fill: rgb(250, 250, 250);
+	}
+}
+.content-container {
+	margin-top: -10px;
+	padding-top: 20px;
+	background-color: rgb(250, 250, 250);
 }
 
 

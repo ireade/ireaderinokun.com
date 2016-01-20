@@ -1,0 +1,11 @@
+<svg class="triangle-svg" viewBox="0 0 1695 152">
+    <title>Rectangle 1</title>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="0" in="SourceGraphic" result="blur"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M1695,0.411533618 L1695,152 L0,152 L0,148.704818 L1695,0.411533618 Z" id="Rectangle-1" filter="url(#filter-1)" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

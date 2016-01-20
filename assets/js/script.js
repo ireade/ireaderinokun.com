@@ -39,4 +39,19 @@ $(document).ready(function() {
 	});
 
 
+
+
+	$(document).on("scroll", function() {
+
+		var t = $(document).scrollTop();
+		var change = -(t/2) + 5;
+
+		$(".home-section--hero").css("top", change);
+
+		// $("header.regular .title-container").css("opacity", 1 - t/300);
+
+
+	}); 
+
+
 })
