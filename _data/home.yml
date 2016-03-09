@@ -59,17 +59,24 @@ articles:
 
 projects:
 - {
+	title: 'Khaled Bot',
+	image: '/assets/img/khaledbotdemo.gif',
+	url: 'http://khaledbot.com',
+	excerpt: 'Khaled Bot is a fun bot for <a href="slack.com" target="_blank">Slack</a> that mimicks DJ Khaled. I made it as an excercise in learning basic AI and getting better at Node.js. It was featured on <a href="https://www.producthunt.com/tech/khaledbot">Product Hunt</a> and <a href="http://techcabal.com/2016/02/15/if-you-use-slack-and-are-inspired-by-dj-khaled-you-will-love-this-bot/">TechCabal</a>.'
+}
+- {
+	title: 'The (Unofficial) CanIUse Embed',
+	image: '/assets/img/caniuse.png',
+	url: 'http://caniuse.bitsofco.de',
+	excerpt: 'An embedabble widget to display up-to-date data from caniuse.com. Displays feature support data for multiple versions of the 10 major browsers. Configurable, reliable, and fully responsive.'
+}
+- {
 	title: 'Formhack',
 	image: '/assets/img/formhack.png',
 	url: 'http://formhack.io',
 	excerpt: 'Formhack is a "hackable sass-based form reset". Although there are standard css resets for forms out there, I wanted to created one that I could easily customize for any site, without having to worry about cross-browser compatibility and differences.'
 }
-- {
-	title: 'The (Un)Official CanIUseEmbed',
-	image: '/assets/img/caniuse.png',
-	url: 'http://caniuse.bitsofco.de',
-	excerpt: 'An embedabble widget to display up-to-date data from caniuse.com. Displays feature support data for multiple versions of the 10 major browsers. Configurable, reliable, and fully responsive.'
-}
+
 - {
 	title: 'Designer News for Pebble',
 	image: '/assets/img/dn-pebble-banner.png',
