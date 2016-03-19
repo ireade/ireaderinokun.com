@@ -62,7 +62,7 @@ projects:
 	title: 'Formhack',
 	image: '/assets/img/formhack.png',
 	url: 'http://formhack.io',
-	excerpt: 'Formhack is a "hackable sass-based form reset". Although there are standard css resets for forms out there, I wanted to created one that I could easily customize for any site, without having to worry about cross-browser compatibility and differences.'
+	excerpt: 'Formhack is a "hackable sass-based form reset". Although there are standard css resets for forms out there, I wanted to create one that I could easily customize for any site, without having to worry about cross-browser compatibility and differences.'
 }
 - {
 	title: 'The (Un)Official CanIUseEmbed',

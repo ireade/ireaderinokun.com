@@ -12,7 +12,6 @@ $(document).ready(function() {
 
 			$(this).parent('nav').removeClass('open');
 			$(this).parent('nav').addClass('closed');
-
 		}
 
 		return false;
@@ -22,18 +21,13 @@ $(document).ready(function() {
 
 
 	$('.item-list-item--work').hover(function() { 
-
 		$(this).children('.cover-title').css('opacity', "1");
-
 		$(this).removeClass('hideTitle');
-		$(this).addClass('showTitle');
-
-	
+		$(this).addClass('showTitle');	
 
 	}, function() {    
 
 		$(this).children('.cover-title').css('opacity', "0");
-
 		$(this).removeClass('showTitle');
 		$(this).addClass('hideTitle');
 	});
@@ -42,15 +36,9 @@ $(document).ready(function() {
 
 
 	$(document).on("scroll", function() {
-
 		var t = $(document).scrollTop();
 		var change = -(t/2) + 5;
-
 		$(".home-section--hero").css("top", change);
-
-		// $("header.regular .title-container").css("opacity", 1 - t/300);
-
-
 	}); 
 
 
