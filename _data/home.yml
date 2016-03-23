@@ -31,14 +31,19 @@ work:
 
 articles:
 - {
+	title: 'Styling Broken Images',
+	url: 'http://bitsofco.de/styling-broken-images/',
+	excerpt: "Broken images are ugly. But they don’t always have to be. We can use CSS to apply styles to the <img> element to provide a better experience than the default. To understand how we can style broken images, there are two facts about the way the <img> element behaves that we need to understand first..."
+}
+- {
 	title: 'The Accessibility Cheatsheet',
 	url: 'http://bitsofco.de/2015/the-accessibility-cheatsheet',
 	excerpt: 'We all know that accessibility is important. The problem is, it is not always clear what exactly we can do to make our sites more accessible. The Web Accessibility Initiative created some Web Content Accessibility Guidelines (WCAG) targeted at us, web content developers, to create more accessible websites...'
 }
 - {
-	title: 'WTF Opera Mini?!',
-	url: 'http://bitsofco.de/wtf-opera-mini/',
-	excerpt: 'According to StatCounter statistics, the global usage statistic for the Opera Mini mobile web browser is about 11.3%. However, in some developing countries such as Nigeria (where I live), this percentage goes up to 73%.  This is a huge problem... '
+	title: 'On :not and Specificity',
+	url: 'http://bitsofco.de/on-not-and-specificity/',
+	excerpt: "The negation pseudo-class, :not, can be incredibly useful. It allows us to target elements based on what attributes they don't have, rather than what they do. This helps us avoid writing extra, increasingly specific, rules in an attempt to override previous ones. ..."
 }
 - {
 	title: 'CSS Font Sizing',
@@ -46,11 +51,7 @@ articles:
 	excerpt: 'Following on from last week’s article, I decided to look into the different ways you can declare your font size with CSS. There are several different ways you can declare the size of a font in CSS. Broadly speaking, the units fall into one of two categories - absolute and relative...'
 }
 
-- {
-	title: 'How Floating Works',
-	url: 'http://bitsofco.de/how-floating-works/',
-	excerpt: 'Although I very rarely use floats nowadays, there are certain specific circumstances in which they are the only viable solution. In these rare cases, I find myself getting frustrated because they dont work in the way I think they should. ...'
-}
+
 
 
 

@@ -85,6 +85,34 @@
 
 
 
+
+
+/* Press Logos */
+
+.press-logos {
+	li {
+		display: inline-block;
+		margin: 0 20px 20px 0;
+
+		img {
+			max-height: 80px;
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		
+		}
+
+		img:hover {
+			-webkit-filter: none;
+			filter: none;
+		}
+	}
+}
+
+
+
+
+/* Projects */
+
 .item-list-item--projects {
 
 
