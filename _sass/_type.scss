@@ -131,6 +131,12 @@ blockquote:before {
     content: open-quote;
 }
 
+ul.ul {
+    list-style-type: disc;
+    display: block;
+    margin-left: 40px;
+}
+
 footer {
     font-size: 1.4rem;
 }

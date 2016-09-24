@@ -98,6 +98,64 @@ projects:
 	excerpt: 'Open Writer is a free theme for the <a href="http://ghost.org" target="_blank">Ghost blogging platform</a>. It has been consistently listed as one of the top free themes on their theme Marketplace, and has been featured in a list of <a href="http://winningwp.com/best-ghost-themes/" target="_blank">"Superb Free and Premium Ghost Themes"</a>.'
 }
 
+# Talks
+
+upcoming_talks:
+- {
+	conference: 'Fronteers',
+	location: 'Amsterdam, Netherlands',
+	date: '6-7 October 2016',
+	event_page_url: 'https://fronteers.nl/congres/2016/speakers',
+}
+
+
+
+past_talks:
+- {
+	title: 'Hosting with Firebase',
+	conference: 'Google Launchpad Build',
+	location: 'Lagos, Nigeria',
+	date: '22 September 2016',
+	event_page_url: 'https://events.withgoogle.com/launchpad-build-ssa/nigeria-lagos/',
+	slides_url: 'https://speakerdeck.com/ireade/hosting-with-firebase',
+	image: '/assets/img/talk_launchpad_2016.jpg'
+}
+- {
+	title: 'Going "Offline First"',
+	conference: 'Google Progressive Web Apps Roadshow',
+	location: 'Lagos, Nigeria',
+	date: '18 August 2016',
+	event_page_url: 'https://events.withgoogle.com/progressive-web-apps-ssa/',
+	slides_url: 'https://speakerdeck.com/ireade/going-offline-first',
+	image: '/assets/img/talk_pwa_lagos_2016.jpg'
+}
+- {
+	title: 'Going "Offline First"',
+	conference: 'Google Progressive Web Apps Roadshow',
+	location: 'Nairobi, Kenya',
+	date: '15 August 2016',
+	event_page_url: 'https://events.withgoogle.com/progressive-web-apps-ssa/',
+	slides_url: 'https://speakerdeck.com/ireade/going-offline-first',
+	image: '/assets/img/talk_pwa_nairobi_2016.jpg'
+}
+- {
+	title: 'Tips & Tricks in Front-End Development',
+	conference: 'forLoop Nigeria',
+	location: 'Lagos, Nigeria',
+	date: '16 June 2016',
+	slides_url: 'https://speakerdeck.com/ireade/tips-and-tricks-in-front-end-development',
+	image: '/assets/img/talk_forloop2.jpg'
+}
+- {
+	title: 'Using Jekyll for Rapid CSS Testing',
+	conference: 'JekyllConf',
+	location: 'Online',
+	date: '7 May 2016',
+	event_page_url: 'http://jekyllconf.com/',
+	slides_url: 'https://speakerdeck.com/ireade/using-jekyll-for-rapid-css-testing',
+	video_url: 'https://www.youtube.com/watch?v=PRKV5IGKF2c&list=PLrxYIq_0LFJdi2HJ6lnY4nm7ewu221hyS&index=2',
+	image: '/assets/img/talk_jekyllconf_2016.jpg'
+}
 
 
 

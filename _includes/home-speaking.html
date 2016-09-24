@@ -1,0 +1,46 @@
+<div class="container home-section home-section--projects" id="speaking">
+	
+	<h2>Speaking</h2>
+
+	<!-- <p>You can view all of my projects on my <a href="https://github.com/ireade" target="_blank">github</a>, but here are some of my favourites.</p> -->
+
+	<section>
+		<h3>Upcoming Talks</h3>
+		<ul class="ul">
+			{% for talk in site.data.home.upcoming_talks %}
+			<li>
+				<a href="{{talk.event_page_url}}">{{talk.conference}}</a>. {{talk.date}}. {{talk.location}}
+			</li>
+			{% endfor %}
+		</ul>
+	</section>
+
+	<br>
+
+	<section>
+		<h3>Past Talks</h3>
+		<ul class="item-list">
+			{% for talk in site.data.home.past_talks %}
+			<li class="item-list-item item-list-item--projects">
+				<a href="{{talk.url}}" target="_blank" class="prject-image-container">
+					<img src="{{talk.image}}" alt="{{talk.title}}">
+				</a>
+				<h3>{{talk.title}}</h3>
+				<p>{{talk.conference}}. {{talk.date}}. {{talk.location}}</p>
+
+				{% if talk.event_page_url %}
+				<a href="{{talk.event_page_url}}" target="_blank">Event Page</a> | 
+				{% endif %}
+				{% if talk.slides_url %}
+				<a href="{{talk.slides_url}}" target="_blank">Slides</a>
+				{% endif %}
+				{% if talk.video_url %}
+				| <a href="{{talk.video_url}}" target="_blank">Video</a>
+				{% endif %}
+			</li>
+			{% endfor %}
+		</ul>
+	</section>
+
+
+</div>
