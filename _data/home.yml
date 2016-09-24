@@ -85,18 +85,12 @@ projects:
 	excerpt: 'An application for the Pebble smartwatch that displays the top and recent stories from <a href="http://designernews.co">Designer News</a>.'
 }
 
-- {
-	title: 'InstaChrome',
-	image: '/assets/img/instachrome.gif',
-	url: 'https://chrome.google.com/webstore/detail/instachrome/cdkpcfbopbdakdkfbpeaicfalbbehfnn',
-	excerpt: 'InstaChrome is a an extension for Google Chrome that displays Instagram posts from a tag of your choice. It has over 200 active users.'
-}
-- {
-	title: 'Open Writer',
-	image: '/assets/img/openwriter.png',
-	url: 'https://github.com/ireade/openwriter',
-	excerpt: 'Open Writer is a free theme for the <a href="http://ghost.org" target="_blank">Ghost blogging platform</a>. It has been consistently listed as one of the top free themes on their theme Marketplace, and has been featured in a list of <a href="http://winningwp.com/best-ghost-themes/" target="_blank">"Superb Free and Premium Ghost Themes"</a>.'
-}
+# - {
+# 	title: 'Open Writer',
+# 	image: '/assets/img/openwriter.png',
+# 	url: 'https://github.com/ireade/openwriter',
+# 	excerpt: 'Open Writer is a free theme for the <a href="http://ghost.org" target="_blank">Ghost blogging platform</a>. It has been consistently listed as one of the top free themes on their theme Marketplace, and has been featured in a list of <a href="http://winningwp.com/best-ghost-themes/" target="_blank">"Superb Free and Premium Ghost Themes"</a>.'
+# }
 
 # Talks
 
