@@ -16,5 +16,13 @@
 		{% endfor %}
 	</ul>
 
+	<ul class="ul">
+		{% for project in site.data.home.other_projects %}
+		<li>
+			<a href="{{project.url}}" target="_blank" class="link-external">{{project.title}}</a>. {{project.excerpt}}
+		</li>
+		{% endfor %}
+	</ul>
+
 
 </div>
