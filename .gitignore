@@ -1,6 +1,7 @@
 _site
 .sass-cache
 .DS_Store
+.idea/
 work/.DS_Store
 work/dash/.DS_Store
 work/le-retail/.DS_Store
