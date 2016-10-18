@@ -1,0 +1,26 @@
+---
+layout: page
+
+title: Work
+full_title: 'I <strong>design and build</strong> web applications. I currently work as Head of Technology
+at <a href="http://bigcabal.com">Big Cabal</a>'
+permalink: /work/
+
+class: work
+icon: bars
+---
+
+<section class="works">
+    <h2 class="sr-only">Past Talks</h2>
+    {% for work in site.data.work.work %}
+    <article class="work">
+        <div class="work-content">
+            <h2 class="work-title">{{ work.title }}</h2>
+            <p>{{ work.excerpt }}</p>
+        </div>
+        <figure class="work-image">
+            <img src="{{ work.image }}" alt="{{ work.title }}">
+        </figure>
+    </article>
+    {% endfor %}
+</section>

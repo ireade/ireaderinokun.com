@@ -1,0 +1,121 @@
+.site-page {
+  width: 100%;
+  box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  background: rgb(245,245,245);
+  margin-bottom: 20px;
+
+  min-height: 90vh;
+  min-height: calc(100vh - 40px);
+  position: relative;
+
+  padding: 20px;
+
+  @media screen and (min-width: $screen-med) {
+    padding: 40px;
+  }
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 70px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $screen-med) {
+    margin-bottom: 100px;
+    flex-wrap: nowrap;
+  }
+
+  .page-title {
+    font-family: $monospace;
+    font-size: 2rem;
+    padding-right: 20px;
+    max-width: 600px;
+    @media screen and (min-width: $screen-med) {
+      order: 1;
+    }
+  }
+
+  .fa {
+    @media screen and (min-width: $screen-med) {
+      order: 2;
+    }
+  }
+
+}
+
+.section-divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.15);
+  margin-bottom: 40px;
+}
+
+.image-background {
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+/* Home ------------ */
+
+.site-page--home {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.site-title-container {
+  width: 70%;
+  max-width: 800px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.site-title {
+  font-family: $monospace;
+  font-size: 2.6rem;
+  margin-bottom: 20px;
+}
+
+
+/* Writing ------------ */
+
+.site-page--writing {
+  background: #FAEDB8;
+}
+
+/* Speaking ------------ */
+
+.site-page--speaking {
+  background: #464646;
+  color: #fff;
+}
+
+/* Open Source ------------ */
+
+.site-page--opensource {
+  background: #F1D1D1;
+}
+
+/* Work ------------ */
+
+.site-page--work {
+  background: #fff;
+}
+
+/* Contact ------------ */
+
+.site-page--contact{
+  background: #B7DAED;
+}

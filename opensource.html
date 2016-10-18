@@ -1,0 +1,38 @@
+---
+layout: page
+
+title: "Open Source"
+full_title: 'I <strong>build products & tools</strong> for everyone, and <a href="https://www.github.com/ireade">share the code</a>'
+permalink: /opensource/
+
+class: opensource
+icon: bars
+---
+
+<section class="excerpts">
+    <h2 class="sr-only">Projects</h2>
+    {% for project in site.data.projects.projects %}
+    <article class="excerpt">
+        <h2 class="excerpt-title">
+            <a href="{{ project.url }}" target="_blank" class="no-ul">{{ project.title }}</a>
+        </h2>
+        <p class="excerpt-content">{{ project.excerpt }}</p>
+    </article>
+    {% endfor %}
+</section>
+
+<div class="section-divider"></div>
+
+<section>
+    <h2 class="sr-only">More Projects</h2>
+    <ul class="ul">
+    {% for project in site.data.projects.projects %}
+    <li>
+        <a href="{{ project.url }}" target="_blank" class="no-ul">
+            <strong>{{ project.title }}</strong>
+        </a> -
+        <span class="excerpt-content">{{ project.excerpt }}</span>
+    </li>
+    {% endfor %}
+    </ul>
+</section>

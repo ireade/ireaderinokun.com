@@ -1,0 +1,45 @@
+---
+layout: page
+
+title: Speaking
+full_title: 'I give <strong>talks</strong> about User Experience Design, Front-End development, or anything I find interesting.'
+permalink: /speaking/
+
+class: speaking
+icon: bars
+---
+
+<div class="image-background" aria-hidden="true"
+     style="background-image: url({{ site.data.speaking.talks[1].image }})">
+</div>
+
+<section class="excerpts">
+    <h2 class="sr-only">Past Talks</h2>
+    {% for talk in site.data.speaking.talks %}
+    <article class="excerpt">
+        <h2 class="excerpt-title">
+            {{ talk.title }}</a>
+        </h2>
+        <p class="excerpt-content">
+            {{ talk.conference }}<br>
+            {{ talk.date }}. {{ talk.location }}<br>
+            {% if talk.event_page_url %}
+            <a href="{{talk.event_page_url}}" target="_blank">Event Page</a> |
+            {% endif %}
+            {% if talk.slides_url %}
+            <a href="{{talk.slides_url}}" target="_blank">Slides</a>
+            {% endif %}
+            {% if talk.video_url %}
+            | <a href="{{talk.video_url}}" target="_blank">Video</a>
+            {% endif %}
+        </p>
+    </article>
+    {% endfor %}
+</section>
+
+<div class="section-divider"></div>
+
+<section>
+    <h2 class="sr-only">Upcoming Talks</h2>
+    Upcoming talks
+</section>

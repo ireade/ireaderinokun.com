@@ -1,0 +1,37 @@
+navigation:
+- {
+  title: 'Home',
+  link: '',
+  icon: 'icon',
+  color: 'rgb(245,245,245)'
+}
+- {
+  title: 'Writing',
+  link: 'writing',
+  icon: 'icon',
+  color: '#FAEDB8'
+}
+- {
+  title: 'Speaking',
+  link: 'speaking',
+  icon: 'icon',
+  color: 'rgb(100,100,100)'
+}
+- {
+  title: 'Open Source',
+  link: 'opensource',
+  icon: 'icon',
+  color: '#F1D1D1'
+}
+- {
+  title: 'Work',
+  link: 'work',
+  icon: 'icon',
+  color: '#FFF'
+}
+- {
+  title: 'Contact',
+  link: 'contact',
+  icon: 'icon',
+  color: '#B7DAED'
+}

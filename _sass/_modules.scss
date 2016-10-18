@@ -1,0 +1,93 @@
+
+/* Excerpt ------------ */
+
+.excerpts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.excerpt {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.excerpt-title {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: $screen-med) {
+
+  .excerpt {
+    width: 50%;
+  }
+
+  .excerpt:nth-child(even) {
+    padding-right: 15px;
+  }
+  .excerpt:nth-child(odd) {
+    padding-left: 15px;
+  }
+
+}
+
+
+/* Work ------------ */
+
+
+.works {
+  @extend .excerpts;
+}
+
+.work-title {
+  @extend .excerpt-title;
+}
+
+.work {
+  width: 100%;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+
+}
+
+.work:last-child {
+  border-bottom: none;
+}
+
+.work-image,
+.work-content {
+  width: 100%;
+}
+
+.work-image {
+  img {
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: $screen-med) {
+
+  .work {
+    flex-wrap: nowrap;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+    justify-content: space-between;
+  }
+
+
+  .work-content {
+    width: 50%;
+  }
+
+  .work-image {
+    width: 40%;
+  }
+
+}

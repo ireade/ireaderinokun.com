@@ -1,0 +1,11 @@
+work:
+- {
+  title: 'LE Retail',
+  excerpt: 'The concept of the design was to create a single page website that didn’t feel like the typical single page website, that being one long page. Because the actual content was so minimal, I was able to go for a more unique design. I also had the additional constraint of not being able to use any images. This was a bit of a struggle for me, as I love to incorporate images in my designs, but it forced me to think differently and come up with this unique layout.',
+  image: '/assets/img/work/le-retail.png'
+}
+- {
+  title: 'Studio of Mode',
+  excerpt: 'The concept of the design was to create a single page website that didn’t feel like the typical single page website, that being one long page. Because the actual content was so minimal, I was able to go for a more unique design. I also had the additional constraint of not being able to use any images. This was a bit of a struggle for me, as I love to incorporate images in my designs, but it forced me to think differently and come up with this unique layout.',
+  image: '/assets/img/work/le-retail.png'
+}
