@@ -10,52 +10,29 @@ body {
 }
 
 
-
-
-
-.site-page--nav {
+.nav-icon {
+  border: 0;
+  background-color: #000;
+  color: #fff;
+  height: 35px;
+  width: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
 
-  font-family: $monospace;
-  font-size: 2rem;
-
-  nav {
-    height: 100%;
-    width: 100%;
-  }
-
-  ul {
-    display: flex;
-    height: 100%;
-    width: 100%;
-    flex-wrap: wrap;
-  }
-
-  li, a {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-
-  a {
-    height: 100%;
-  }
-
-
-  .nav- { color: #B7DAED; }
-  .nav-:hover, .nav-:focus { color: #FFF; background-color: #B7DAED }
-  .nav-writing { color: #B7DAED; }
-  .nav-writing:hover, .nav-writing:focus { color: #FFF; background-color: #B7DAED }
-  .nav-speaking { color: #B7DAED; }
-  .nav-speaking:hover, .nav-speaking:focus { color: #FFF; background-color: #B7DAED }
-
+  transition: transform 0.5s;
 }
 
-.site-page.site-page--nav {
-  padding: 0;
+.nav-icon:hover,
+.nav-icon:focus {
+  outline: none;
+  box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.2);
+  transform: scale(1.2);
 }
+
+
+
+
 

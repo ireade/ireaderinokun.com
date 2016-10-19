@@ -39,7 +39,12 @@
   }
 
   .fa {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 10px;
+
     @media screen and (min-width: $screen-med) {
+      font-size: 2.5rem;
       order: 2;
     }
   }
@@ -53,18 +58,52 @@
   margin-bottom: 40px;
 }
 
-.image-background {
-  opacity: 0.1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height:100%;
 
-  background-position: center;
-  background-repeat: no-repeat;
+/* Navigation ------------ */
+
+.site-page--nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-family: $monospace;
+  font-size: 2rem;
+
+  padding: 0;
+
+  nav {
+    height: 100%;
+    width: 100%;
+  }
+
+  ul {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  li, a {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a {
+    height: 100%;
+  }
+
+
+  //.nav- { color: #B7DAED; }
+  //.nav-:hover, .nav-:focus { color: #FFF; background-color: #B7DAED }
+  //.nav-writing { color: #B7DAED; }
+  //.nav-writing:hover, .nav-writing:focus { color: #FFF; background-color: #B7DAED }
+  //.nav-speaking { color: #B7DAED; }
+  //.nav-speaking:hover, .nav-speaking:focus { color: #FFF; background-color: #B7DAED }
+
 }
-
 
 
 /* Home ------------ */
@@ -98,7 +137,7 @@
 /* Speaking ------------ */
 
 .site-page--speaking {
-  background: #464646;
+  background: rgb(100,100,100);
   color: #fff;
 }
 
