@@ -16,10 +16,21 @@ icon: gear
     <article class="work">
         <div class="work-content">
             <h2 class="work-title">{{ work.title }}</h2>
+            <p class="work-roles">
+                {% for workRole in work.roles %}
+                <span class="role role-{{workRole}}"
+                      style="color: {{ site.data.work.roles[workRole].color }} ">
+                    {{ site.data.work.roles[workRole].name }}
+                </span>
+                {% endfor %}
+            </p>
             <p>{{ work.excerpt }}</p>
         </div>
         <figure class="work-image">
-            <img src="{{ work.image }}" alt="{{ work.title }}">
+            <div class="work-screenshot-container">
+                <img class="work-screenshot" src="{{ work.image }}" alt="{{ work.title }}">
+            </div>
+            <img class="work-device work-device--macbook" src="/assets/img/work/macbook.png" alt="">
         </figure>
     </article>
     {% endfor %}

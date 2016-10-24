@@ -1,11 +1,36 @@
+roles: {
+  pm: {
+      name: 'Project Management',
+      color: '#2c3e50'
+  },
+  front-end: {
+      name: 'Front-End Development',
+      color: '#9b59b6'
+  },
+  design: {
+      name: 'Design',
+      color: '#27ae60'
+  }
+}
+
+
+
 work:
 - {
-  title: 'LE Retail',
+  title: 'TechCabal Index',
+  roles: ['front-end', 'pm'],
   excerpt: 'The concept of the design was to create a single page website that didn’t feel like the typical single page website, that being one long page. Because the actual content was so minimal, I was able to go for a more unique design. I also had the additional constraint of not being able to use any images. This was a bit of a struggle for me, as I love to incorporate images in my designs, but it forced me to think differently and come up with this unique layout.',
-  image: '/assets/img/work/le-retail.png'
+  image: '/assets/img/work/tcindex.png'
+}
+- {
+  title: 'LE Retail',
+  roles: ['design', 'front-end', 'pm'],
+  excerpt: 'The concept of the design was to create a single page website that didn’t feel like the typical single page website, that being one long page. Because the actual content was so minimal, I was able to go for a more unique design. I also had the additional constraint of not being able to use any images. This was a bit of a struggle for me, as I love to incorporate images in my designs, but it forced me to think differently and come up with this unique layout.',
+  image: '/assets/img/work/tcindex.png'
 }
 - {
   title: 'Studio of Mode',
+  roles: ['design', 'front-end', 'pm'],
   excerpt: 'The concept of the design was to create a single page website that didn’t feel like the typical single page website, that being one long page. Because the actual content was so minimal, I was able to go for a more unique design. I also had the additional constraint of not being able to use any images. This was a bit of a struggle for me, as I love to incorporate images in my designs, but it forced me to think differently and come up with this unique layout.',
-  image: '/assets/img/work/le-retail.png'
+  image: '/assets/img/work/tcindex.png'
 }

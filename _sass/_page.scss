@@ -6,13 +6,14 @@
   margin-bottom: 20px;
 
   min-height: 90vh;
-  min-height: calc(100vh - 40px);
+  min-height: calc(100vh - 20px);
   position: relative;
 
   padding: 20px;
 
   @media screen and (min-width: $screen-med) {
     padding: 40px;
+    min-height: calc(100vh - 40px);
   }
 }
 
@@ -89,6 +90,7 @@
     width: 100%;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
   }
 
   a {
@@ -117,14 +119,21 @@
 .site-title-container {
   width: 70%;
   max-width: 800px;
-  padding-bottom: 20px;
-  padding-left: 20px;
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 600px) {
+    margin-left: -10px;
+  }
 }
 
 .site-title {
   font-family: $monospace;
-  font-size: 2.6rem;
+  font-size: 2rem;
   margin-bottom: 20px;
+
+  @media screen and (min-width: $screen-med) {
+    font-size: 2.6rem;
+  }
 }
 
 
@@ -151,6 +160,22 @@
 
 .site-page--work {
   background: #fff;
+
+
+
+
+
+}
+
+.work-roles {
+  margin-bottom: 15px;
+
+  font-weight: 600;
+
+  .role:not(:last-child):after {
+    content: ' • ';
+    color: #000;
+  }
 }
 
 /* Contact ------------ */
