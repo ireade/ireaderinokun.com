@@ -40,11 +40,11 @@ body {
   bottom: 20px;
   left: 30px;
 
-  &[data-direction="down"] {
+  &.nav-icon--floating--down {
     .nav-dir-up { display: none; }
   }
 
-  &[data-direction="up"] {
+  &.nav-icon--floating--up {
     .nav-dir-down { display: none; }
   }
 
