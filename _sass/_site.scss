@@ -23,6 +23,8 @@ body {
   cursor: pointer;
 
   transition: transform 0.5s;
+  text-decoration: none;
+  z-index: 2;
 }
 
 .nav-icon:hover,
@@ -30,6 +32,26 @@ body {
   outline: none;
   box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.2);
   transform: scale(1.2);
+}
+
+.nav-icon--floating {
+  position: absolute;
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+
+  &[data-direction="down"] {
+    .nav-dir-up { display: none; }
+  }
+
+  &[data-direction="up"] {
+    .nav-dir-down { display: none; }
+  }
+
+  @media screen and (min-width: $screen-med) {
+    bottom: 50px;
+    left: 50px;
+  }
 }
 
 
