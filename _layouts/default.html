@@ -34,7 +34,7 @@
             <ul>
                 {% for item in site.data.nav.navigation %}
                 <li>
-                    <a href="/{{ item.link }}" class="no-ul-n nav-{{ item.link }}">
+                    <a href="/{{ item.link }}" class="no-ul-n nav-{{ item.class }}">
                         <i class="fa fa-{{ item.icon }}" aria-hidden="true"></i>
                         <span>{{ item.title }}</span>
                     </a>
