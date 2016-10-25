@@ -52,11 +52,44 @@
 
 }
 
+
 .section-divider {
   height: 1px;
   width: 100%;
   background-color: rgba(0,0,0,0.15);
   margin-bottom: 40px;
+}
+
+
+
+@keyframes dropIconIn {
+
+  from {
+    transform: translateY(-200px) rotate(10deg)
+  }
+
+  40% {
+    transform: translateY(10px) rotate(10deg)
+  }
+
+  70% {
+    transform: translateY(-10px) rotate(10deg)
+  }
+
+  90% {
+    transform: translateY(0) rotate(10deg)
+  }
+
+  to {
+    transform: translateY(0) rotate(0)
+  }
+
+}
+
+.page-icon {
+  animation-name: dropIconIn;
+  animation-duration: 2.5s;
+
 }
 
 
