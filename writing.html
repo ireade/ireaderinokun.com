@@ -14,7 +14,11 @@ icon: pencil
     {% for article in site.data.writing.articles %}
     <article class="excerpt">
         <h2 class="excerpt-title">
-            <a href="{{ article.url }}" target="_blank" class="no-ul">{{ article.title }}</a>
+            "<a href="{{ article.url }}" target="_blank" class="no-ul">{{ article.title }}</a>",
+            <a href="{{ site.data.writing.blogs[article.blog].url }}" class="no-ul"
+               style="color: {{ site.data.writing.blogs[article.blog].color }} ">
+                {{ site.data.writing.blogs[article.blog].name }}
+            </a>
         </h2>
         <p class="excerpt-content">{{article.excerpt}}</p>
     </article>
