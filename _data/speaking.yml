@@ -1,12 +1,12 @@
 talks:
 - {
-    title: 'What about CSS? Progressive Enhancement & CSS',
+  title: 'What about CSS? Progressive Enhancement & CSS',
 	conference: 'Fronteers',
 	location: 'Amsterdam, Netherlands',
 	date: '6 October 2016',
 	event_page_url: 'https://fronteers.nl/congres/2016/speakers',
 	slides_url: 'https://speakerdeck.com/ireade/what-about-css-progressive-enhancement-and-css',
-    image: '/assets/img/speaking/talk_fronteers_2016.jpg'
+  image: '/assets/img/speaking/talk_fronteers_2016.jpg'
 }
 - {
 	title: 'Hosting with Firebase',
