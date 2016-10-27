@@ -1,4 +1,31 @@
 
+@keyframes blink {
+  from {
+    border-left: 5px solid #000;
+  }
+  50% {
+    border-left: 5px solid transparent;
+  }
+  to {
+    border-left: 5px solid #000;
+  }
+}
+
+.typed {
+  position: relative;
+}
+
+//.typed:after {
+//  content: '';
+//  height: 100%;
+//  width: 5px;
+//  background: #000;
+//  border-left: 5px solid #000;
+//  //animation: blink 0.5s infinite;
+//}
+
+
+
 /* Excerpt ------------ */
 
 .excerpts {

@@ -4,7 +4,6 @@ const slideElements = Array.from( document.querySelectorAll('[data-slide]') );
 const slideshowBackground = document.querySelector('.slideshow-background');
 
 function initialiseSlideshow() {
-
     slideElements.forEach((slideElement) => {
         slideElement.addEventListener('mouseenter', function(e) {
             changeSlideBackground(e.target);
@@ -13,22 +12,12 @@ function initialiseSlideshow() {
             resetSlideBackground()
         });
     });
-
 }
 
 
 function changeSlideBackground(element) {
     const imageUrl = element.dataset.slide;
-
-    //slideshowBackground.style.backgroundImage = 'none';
     slideshowBackground.style.backgroundImage = `url(${imageUrl})`;
-
-    // setTimeout(() => {
-    //     slideshowBackground.style.backgroundImage = `url(${imageUrl})`;
-    // }, 500)
-
-
-
     slideElements.forEach((slideElement) => {
         slideElement.classList.add('inactive');
         slideElement.classList.remove('active');
@@ -43,8 +32,6 @@ function resetSlideBackground() {
         slideElement.classList.remove('active');
     })
 }
-
-
 
 if ( slideshowBackground ) {
     initialiseSlideshow();
