@@ -4,3 +4,12 @@ $sans-serif: 'Karla', sans-serif;
 
 
 $screen-med: 600px;
+
+
+@mixin profileBackground() {
+  background-image: url('/assets/img/ireaderinokun.png');
+  background-repeat: no-repeat;
+  background-size: 29%;
+  background-position: 95% 95%;
+  background-attachment: fixed;
+}

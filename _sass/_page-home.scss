@@ -5,8 +5,10 @@
   justify-content: flex-start;
   align-items: flex-end;
 
-  background: rgb(50,50,50);
-  color: #fff;
+  //background: rgb(50,50,50);
+  //color: #fff;
+
+  @include profileBackground();
 }
 
 .site-title-container {
