@@ -20,10 +20,10 @@ function scrollScreenshot(screenshotElement, direction) {
 }
 
 function resetScreenshot(screenshotElement) {
-    screenshotElement.style.transition = 'transform 0.5s';
+    // screenshotElement.style.transition = 'transform 0.5s';
     screenshotElement.style.transform = 'translateY(0%)';
     setTimeout(() => {
-        screenshotElement.style.transition = 'none';
+        // screenshotElement.style.transition = 'none';
     }, 1000);
 }
 

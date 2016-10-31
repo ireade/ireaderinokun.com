@@ -36,12 +36,26 @@
 .excerpt {
   width: 100%;
   padding-bottom: 30px;
+  transition: opacity 1s;
 }
 
 .excerpt-title {
   font-weight: 600;
   display: block;
   margin-bottom: 10px;
+}
+
+.excerpt.inactive {
+  opacity: 0.4;
+}
+
+.excerpt.active {
+  opacity: 1;
+  .excerpt-title,
+  .excerpt-content {
+    //box-shadow: 0px 0px 0px 40px rgba(255,255,255,0.3);
+  }
+
 }
 
 @media screen and (min-width: $screen-med) {
@@ -105,7 +119,7 @@
 
 
 .work-screenshot-container {
-  width: 71%;
+  width: 71.5%;
   max-height: 80%;
   left: 50%;
   top: 10%;
@@ -119,7 +133,15 @@
 .work-screenshot {
   position: relative;
   transform: translateY(0);
-  //transition: transform 0.3s;
+  transition: transform 0.5s;
+}
+
+.work:first-child {
+
+  .work-screenshot {
+    transition: transform 0.5s;
+  }
+
 }
 
 
@@ -188,21 +210,4 @@ img.work-device {
   z-index: 2;
 }
 
-[data-slide] {
-  transition: opacity 1s;
-}
 
-[data-slide].inactive {
-  opacity: 0.4;
-}
-
-[data-slide].active {
-  opacity: 1;
-  //transform: translateY(-20px);
-
-  .excerpt-title,
-  .excerpt-content {
-    //box-shadow: 0px 0px 0px 40px rgba(255,255,255,0.3);
-  }
-
-}

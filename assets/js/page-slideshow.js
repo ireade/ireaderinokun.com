@@ -8,29 +8,12 @@ function initialiseSlideshow() {
         slideElement.addEventListener('mouseenter', function(e) {
             changeSlideBackground(e.target);
         });
-        slideElement.addEventListener('mouseleave', function(e) {
-            resetSlideBackground()
-        });
     });
 }
-
 
 function changeSlideBackground(element) {
     const imageUrl = element.dataset.slide;
     slideshowBackground.style.backgroundImage = `url(${imageUrl})`;
-    slideElements.forEach((slideElement) => {
-        slideElement.classList.add('inactive');
-        slideElement.classList.remove('active');
-    });
-    element.classList.remove('inactive');
-    element.classList.add('active');
-}
-
-function resetSlideBackground() {
-    slideElements.forEach((slideElement) => {
-        slideElement.classList.remove('inactive');
-        slideElement.classList.remove('active');
-    })
 }
 
 if ( slideshowBackground ) {
