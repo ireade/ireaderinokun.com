@@ -1,71 +1,43 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>
-      {% if page.title %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        {% if page.title %}
         {{ page.title }} | {{site.title}}
-      {% else %}
+        {% else %}
         {{ site.title }}
-      {% endif %}
-  </title>
-  <meta name="description" content="{{ site.description }}">
-  
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+        {% endif %}
+    </title>
+    <meta name="description" content="{{ site.description }}">
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>
 <body id="body">
 
-    <a href="#nav" class="nav-icon nav-icon--floating nav-icon--floating--down">
-        <i class="fa fa-bars nav-dir-down" aria-hidden="true"></i>
-        <span class="sr-only nav-dir-down">Navigation</span>
+<a href="#nav" class="nav-icon nav-icon--floating nav-icon--floating--down">
+    <i class="fa fa-chevron-down nav-dir-down" aria-hidden="true"></i>
+    <span class="sr-only nav-dir-down">Navigation</span>
 
-        <i class="fa fa-chevron-up nav-dir-up" aria-hidden="true"></i>
-        <span class="sr-only nav-dir-up">Back to Content</span>
-    </a>
+    <i class="fa fa-chevron-up nav-dir-up" aria-hidden="true"></i>
+    <span class="sr-only nav-dir-up">Back to Content</span>
+</a>
 
-    {{content}}
+{{content}}
 
-    <section id="nav" class="site-page site-page--nav">
-        <h2 class="sr-only">Navigation</h2>
-        <nav>
-            <ul>
-                {% for item in site.data.nav.navigation %}
-                <li>
-                    <a href="/{{ item.link }}" class="no-ul-n nav-{{ item.class }}">
-                        <i class="fa fa-{{ item.icon }}" aria-hidden="true"></i>
-                        <span>{{ item.title }}</span>
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
-        </nav>
-    </section>
+<script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
 
-    <script src="{{ "/assets/js/script.js" | prepend: site.baseurl }}"></script>
-    {% if page.layout == 'page' %}
-        <script src="{{ "/assets/js/page.js" | prepend: site.baseurl }}"></script>
-        {% if page.title == 'Work' %}
-        <script src="{{ "/assets/js/page-work.js" | prepend: site.baseurl }}"></script>
-        {% endif %}
-    {% elsif page.layout == 'page-slideshow' %}
-        <script src="{{ "/assets/js/page.js" | prepend: site.baseurl }}"></script>
-        <script src="{{ "/assets/js/page-slideshow.js" | prepend: site.baseurl }}"></script>
-    {% elsif page.layout == 'home' %}
-        <script src="{{ "/assets/js/home.js" | prepend: site.baseurl }}"></script>
-    {% endif %}
-
-
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-60256750-2', 'auto');
-        ga('send', 'pageview');
-    </script>
+<script>
+//    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+//                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+//            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+//    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+//
+//    ga('create', 'UA-60256750-2', 'auto');
+//    ga('send', 'pageview');
+</script>
 </body>
 </html>

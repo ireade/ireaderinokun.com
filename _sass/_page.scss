@@ -214,77 +214,13 @@
 
 
 
-/* Home ------------ */
-
-.site-page--home {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-
-  background: rgb(50,50,50);
-  color: #fff;
-}
-
-.site-title-container {
-  width: 70%;
-  max-width: 800px;
-  padding-bottom: 30px;
-
-  @media screen and (min-width: 600px) {
-    margin-left: -10px;
-  }
-}
-
-.site-title {
-  font-family: $monospace;
-  font-size: 2rem;
-  margin-bottom: 20px;
-
-  @media screen and (min-width: $screen-med) {
-    font-size: 2.6rem;
-  }
-}
 
 
-/* Writing ------------ */
 
-.site-page--writing {
-  //background: #FAEDB8;
-}
 
-/* Speaking ------------ */
 
-.site-page--speaking {
-  background: rgb(100,100,100);
-  color: #fff;
-}
 
-/* Open Source ------------ */
 
-.site-page--opensource {
-  background: #F1D1D1;
-}
 
-/* Work ------------ */
 
-.site-page--work {
-  background: #fff;
 
-}
-
-.work-roles {
-  margin-bottom: 15px;
-
-  font-weight: 600;
-
-  .role:not(:last-child):after {
-    content: ' • ';
-    color: #000;
-  }
-}
-
-/* Contact ------------ */
-
-.site-page--contact{
-  background: #B7DAED;
-}
