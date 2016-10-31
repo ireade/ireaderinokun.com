@@ -9,6 +9,18 @@ body {
   }
 }
 
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
 
 .nav-icon {
   border: 0;
@@ -25,6 +37,10 @@ body {
   transition: transform 0.5s;
   text-decoration: none;
   z-index: 2;
+
+  animation-name: bounce;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
 }
 
 .nav-icon:hover,
