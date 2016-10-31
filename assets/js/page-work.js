@@ -1,4 +1,5 @@
 function scrollScreenshot(screenshotElement, direction) {
+
     let currentTransform = screenshotElement.style.transform ? screenshotElement.style.transform : 'translateY(0%)';
     currentTransform = currentTransform.split('(')[1];
     currentTransform = currentTransform.split('%')[0];
@@ -20,22 +21,25 @@ function scrollScreenshot(screenshotElement, direction) {
 }
 
 function resetScreenshot(screenshotElement) {
-    // screenshotElement.style.transition = 'transform 0.5s';
+    screenshotElement.style.transition = 'transform 0.5s';
     screenshotElement.style.transform = 'translateY(0%)';
     setTimeout(() => {
-        // screenshotElement.style.transition = 'none';
+        screenshotElement.style.transition = 'none';
     }, 1000);
 }
 
+const workSectionElement = document.querySelector('.site-page--work');
 const workSections = [];
 const workSectionElements = document.querySelectorAll('.work');
 workSectionElements.forEach((element) => {
+    console.log(element)
     workSections.push({
         element: element,
-        start: element.offsetTop - 250,
-        end: element.offsetTop + element.clientHeight
+        start: element.offsetTop + workSectionElement.offsetTop - 250,
+        end: element.offsetTop  + workSectionElement.offsetTop + element.clientHeight
     })
 });
+
 
 let lastScrollTop = 0;
 window.addEventListener('scroll', function(e) {
@@ -51,12 +55,15 @@ window.addEventListener('scroll', function(e) {
 
     workSections.forEach((workSection) => {
         const screenshotElement = workSection.element.querySelector('.work-screenshot');
-        if ( viewportScrollTop < 20 || !isInView(workSection)) return resetScreenshot(screenshotElement);
+        if ( !isInView(workSection)) return resetScreenshot(screenshotElement);
         scrollScreenshot( screenshotElement, scrollDirection() )
     });
 
     lastScrollTop = viewportScrollTop
+
 });
+
+
 
 
 
