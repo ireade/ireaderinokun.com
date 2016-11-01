@@ -50,6 +50,5 @@ talks:
 	date: '7 May 2016',
 	event_page_url: 'http://jekyllconf.com/',
 	slides_url: 'https://speakerdeck.com/ireade/using-jekyll-for-rapid-css-testing',
-	video_url: 'https://www.youtube.com/watch?v=PRKV5IGKF2c&list=PLrxYIq_0LFJdi2HJ6lnY4nm7ewu221hyS&index=2',
-	image: '/assets/img/speaking/talk_jekyllconf_2016.png'
+	video_url: 'https://www.youtube.com/watch?v=PRKV5IGKF2c&list=PLrxYIq_0LFJdi2HJ6lnY4nm7ewu221hyS&index=2'
 }

@@ -38,23 +38,19 @@ var postcssProcessors = [
 	} )
 ];
 
-var sassMainFile = 'development/css/main.scss';
-var sassFiles = 'development/css/**/*.scss';
+var sassMainFile = '_css/main.scss';
+var sassFiles = '_css/*.scss';
 
 gulp.task('css', function() {
-	// gulp.src(sassMainFile)
-    //
-	// 	// PostCSS
-	// 	.pipe(
-	// 		postcss(postcssProcessors, {syntax: scss})
-	// 	)
-    //
-	// 	// SASS to CSS
-	// 	.pipe(
-	// 		sass({ outputStyle: 'expanded' }) // compressed
-	// 		.on('error', gutil.log)
-	// 	)
-	// 	.pipe(gulp.dest('assets/css'));
+	gulp.src(sassMainFile)
+		.pipe(
+			postcss(postcssProcessors, {syntax: scss})
+		)
+		.pipe(
+			sass({ outputStyle: 'compressed' }) // compressed
+			.on('error', gutil.log)
+		)
+		.pipe(gulp.dest('assets/css'));
 });
 
 

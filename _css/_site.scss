@@ -36,11 +36,35 @@ body {
 
   transition: transform 0.5s;
   text-decoration: none;
-  z-index: 2;
+  z-index: 10;
 
   animation-name: bounce;
   animation-duration: 2s;
-  animation-delay: 5s;
+  animation-delay: 4.8s;
+
+  position: absolute;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+
+  &.nav-icon--down {
+    .nav-dir-up { display: none; }
+  }
+
+  &.nav-icon--up {
+    .nav-dir-down { display: none; }
+  }
+
+  @media screen and (min-width: $screen-med) {
+    bottom: 50px;
+    left: 50px;
+  }
+
+
+  .fa {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .nav-icon:hover,
@@ -50,25 +74,7 @@ body {
   transform: scale(1.2);
 }
 
-.nav-icon--floating {
-  position: absolute;
-  position: fixed;
-  bottom: 30px;
-  left: 30px;
 
-  &.nav-icon--floating--down {
-    .nav-dir-up { display: none; }
-  }
-
-  &.nav-icon--floating--up {
-    .nav-dir-down { display: none; }
-  }
-
-  @media screen and (min-width: $screen-med) {
-    bottom: 50px;
-    left: 50px;
-  }
-}
 
 
 

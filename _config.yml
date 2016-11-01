@@ -13,4 +13,4 @@ markdown: kramdown
 sass:
     style: :compressed
 
-exclude: ['_scripts', 'node_modules', 'gulpfile.js', 'package.json']
+exclude: ['_scripts', '_css', 'node_modules', 'gulpfile.js', 'package.json']
