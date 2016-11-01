@@ -1,17 +1,17 @@
 <section id="opensource" class="site-page site-page--opensource">
     <header class="page-header">
         <i class="fa fa-code-fork page-icon" aria-hidden="true"></i>
-        <h1 class="page-title">
+        <h2 class="page-title">
             I <strong>build products & tools</strong> for everyone, and <a href="https://www.github.com/ireade">share the code</a>
-        </h1>
+        </h2>
     </header>
     <section class="excerpts excerpts-highlightEffect">
-        <h2 class="sr-only">Projects</h2>
+        <h3 class="sr-only">Featured Projects</h3>
         {% for project in site.data.projects.projects %}
         <article class="excerpt">
-            <h2 class="excerpt-title">
+            <h4 class="excerpt-title">
                 <a href="{{ project.url }}" target="_blank" class="no-ul">{{ project.title }}</a>
-            </h2>
+            </h4>
             <p class="excerpt-content">{{ project.excerpt }}</p>
         </article>
         {% endfor %}
@@ -20,7 +20,7 @@
     <div class="section-divider"></div>
 
     <section>
-        <h2 class="sr-only">More Projects</h2>
+        <h3 class="sr-only">More Projects</h3>
         <ul class="ul">
             {% for project in site.data.projects.projects %}
             <li>

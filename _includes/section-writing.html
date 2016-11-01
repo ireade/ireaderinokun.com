@@ -1,21 +1,21 @@
 <section id="writing" class="site-page site-page--writing">
     <header class="page-header">
         <i class="fa fa-pencil page-icon" aria-hidden="true"></i>
-        <h1 class="page-title">
+        <h2 class="page-title">
             I <strong>write</strong> weekly technical articles on my blogs, <a href="https://bitsofco.de">bitsofcode</a> & <a href="https://helloangular.com">Hello Angular</a>
-        </h1>
+        </h2>
     </header>
     <section class="excerpts excerpts-highlightEffect">
-        <h2 class="sr-only">Article Excerpts</h2>
+        <h3 class="sr-only">Article Excerpts</h3>
         {% for article in site.data.writing.articles %}
         <article class="excerpt">
-            <h2 class="excerpt-title">
+            <h4 class="excerpt-title">
                 "<a href="{{ article.url }}" target="_blank" class="no-ul">{{ article.title }}</a>",
                 <a href="{{ site.data.writing.blogs[article.blog].url }}" class="no-ul"
                    style="color: {{ site.data.writing.blogs[article.blog].color }} ">
                     {{ site.data.writing.blogs[article.blog].name }}
                 </a>
-            </h2>
+            </h4>
             <p class="excerpt-content">{{article.excerpt}}</p>
         </article>
         {% endfor %}

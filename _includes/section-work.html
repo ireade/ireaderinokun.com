@@ -1,17 +1,17 @@
 <section id="work" class="site-page site-page--work">
     <header class="page-header">
         <i class="fa fa-gear page-icon" aria-hidden="true"></i>
-        <h1 class="page-title">
+        <h2 class="page-title">
             I <strong>design and build</strong> web applications. I currently work as Head of Technology
             at <a href="http://bigcabal.com">Big Cabal</a>
-        </h1>
+        </h2>
     </header>
     <section class="works">
-        <h2 class="sr-only">Past Talks</h2>
+        <h3 class="sr-only">Featured Work</h3>
         {% for work in site.data.work.work %}
         <article class="work">
             <div class="work-content">
-                <h2 class="work-title">{{ work.title }}</h2>
+                <h4 class="work-title">{{ work.title }}</h4>
                 <p class="work-roles">
                     {% for workRole in work.roles %}
                     <span class="role role-{{workRole}}"
