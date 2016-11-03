@@ -4,10 +4,12 @@ importScripts('assets/js/lib/sw-offline-google-analytics.js');
 goog.offlineGoogleAnalytics.initialize();
 
 const precacheFiles = [
-    'https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css',
-    'https://fonts.googleapis.com/css?family=Karla:400,700|Space+Mono:400,700',
+    new Request('https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'),
+    new Request('https://fonts.googleapis.com/css?family=Karla:400,700|Space+Mono:400,700'),
 
-    './assets/img/ireaderinokun.png'
+    './assets/img/ireaderinokun.png',
+    './assets/img/Fronteers_BW.png'
+
 ];
 toolbox.precache(precacheFiles);
 
