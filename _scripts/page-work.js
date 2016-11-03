@@ -9,16 +9,16 @@
 
         switch (direction) {
             case 'down':
-                currentTransform = parseFloat(currentTransform) - 0.5
+                currentTransform = parseFloat(currentTransform) - 0.2
                 break;
             case 'up':
-                currentTransform = parseFloat(currentTransform) + 0.5
+                currentTransform = parseFloat(currentTransform) + 0.2
                 break;
             default:
                 break;
         }
 
-        if (currentTransform < 0.5 && currentTransform > -100) {
+        if (currentTransform < 0.2 && currentTransform > -100) {
             screenshotElement.style.transform = `translateY(${currentTransform}%)`;
         }
     }

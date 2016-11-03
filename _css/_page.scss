@@ -18,26 +18,24 @@
   }
 
 
-  //transition: opacity 1s;
+
+
 }
 
 .site-page--active {
-  //filter: none;
-  //opacity: 1;
-
   .page-icon {
     animation-name: dropIconIn;
     animation-duration: 2.5s;
+    opacity: 1;
   }
 }
 
 .site-page--inactive {
-  //filter: blur(3px);
-  //opacity: 0.7;
 
   .page-icon {
     opacity: 0;
   }
+
 }
 
 .page-header {
@@ -83,15 +81,15 @@
 @keyframes dropIconIn {
 
   from {
-    transform: translateY(-200px) rotate(10deg)
+    transform: translateY(-200px) rotate(10deg);
   }
 
   40% {
-    transform: translateY(10px) rotate(10deg)
+    transform: translateY(10px) rotate(10deg);
   }
 
   70% {
-    transform: translateY(-10px) rotate(10deg)
+    transform: translateY(-10px) rotate(10deg);
   }
 
   90% {
@@ -103,3 +101,14 @@
   }
 
 }
+//
+//@keyframes dropIconOut {
+//  from {
+//    transform: translateY(0) rotate(0);
+//    opacity: 1;
+//  }
+//  to {
+//    transform: translateY(-200px);
+//    opacity: 0;
+//  }
+//}

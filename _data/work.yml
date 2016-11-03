@@ -10,6 +10,10 @@ roles: {
   design: {
       name: 'Design',
       color: '#27ae60'
+  },
+  logo: {
+        name: 'Logo',
+        color: '#27ae60'
   }
 }
 
@@ -17,20 +21,20 @@ roles: {
 
 work:
 - {
+  title: 'Studio of Mode',
+  roles: ['design', 'front-end', 'pm'],
+  excerpt: "STUDIO OF MODÉ is the brainchild of Modé Aderinokun, who officially founded the company in 2012 in order to create a space where the voice of an artist with various skills can be clearly heard and understood. Modé and I worked on the deisgn together, and I developed the website on a combination of Wordpress and Shopify. The website is divided into three main parts - Modé's portfolfio (SEE), the studio and gallery space (STUDIO), and the online shop (SHOP). A key aspect of the design of the website was to make it seem as minimal as possible, despite the large amount of information avaiable. It was particularly important to have the website completely accessible on all devices due to the younger audience.",
+  image: '/assets/img/work/studioofmode.png'
+}
+- {
   title: 'TechCabal Index',
   roles: ['front-end', 'pm'],
   excerpt: 'The concept of the design was to create a single page website that didn’t feel like the typical single page website, that being one long page. Because the actual content was so minimal, I was able to go for a more unique design. I also had the additional constraint of not being able to use any images. This was a bit of a struggle for me, as I love to incorporate images in my designs, but it forced me to think differently and come up with this unique layout.',
   image: '/assets/img/work/tcindex.png'
 }
 - {
-  title: 'LE Retail',
-  roles: ['design', 'front-end', 'pm'],
-  excerpt: 'The concept of the design was to create a single page website that didn’t feel like the typical single page website, that being one long page. Because the actual content was so minimal, I was able to go for a more unique design. I also had the additional constraint of not being able to use any images. This was a bit of a struggle for me, as I love to incorporate images in my designs, but it forced me to think differently and come up with this unique layout.',
-  image: '/assets/img/work/tcindex.png'
-}
-- {
-  title: 'Studio of Mode',
-  roles: ['design', 'front-end', 'pm'],
-  excerpt: 'The concept of the design was to create a single page website that didn’t feel like the typical single page website, that being one long page. Because the actual content was so minimal, I was able to go for a more unique design. I also had the additional constraint of not being able to use any images. This was a bit of a struggle for me, as I love to incorporate images in my designs, but it forced me to think differently and come up with this unique layout.',
-  image: '/assets/img/work/tcindex.png'
+  title: 'Supper Club',
+  roles: ['design', 'logo'],
+  excerpt: 'This was a design I did as a single-day project during a short course. The brief I was given was that “Supper Club” was a “five day night-time street food meetup” who was looking for a “one page site to advertise forthcoming Supper Club events”. The requirements for the website included: A Supper Club identity, the event duration and location details, a sign up form, and social links. I designed both the Supper Club logo and the one page website.',
+  image: '/assets/img/work/supperclub.png'
 }
