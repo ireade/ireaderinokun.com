@@ -4,4 +4,8 @@
   background: #B7DAED;
 
   @include profileBackground();
+
+  @media screen and (max-width: $screen-med) {
+    margin-bottom: 10px;
+  }
 }

@@ -37,7 +37,7 @@
     workSectionElements.forEach((element) => {
         workSections.push({
             element: element,
-            start: element.offsetTop + workSectionElement.offsetTop - (window.innerHeight / 2),
+            start: element.offsetTop + workSectionElement.offsetTop - (window.innerHeight / 3),
             end: element.offsetTop + workSectionElement.offsetTop + element.clientHeight
         })
     });
