@@ -18,12 +18,12 @@
   }
 
 
-  transition: opacity 1s;
+  //transition: opacity 1s;
 }
 
 .site-page--active {
   //filter: none;
-  opacity: 1;
+  //opacity: 1;
 
   .page-icon {
     animation-name: dropIconIn;
@@ -33,7 +33,7 @@
 
 .site-page--inactive {
   //filter: blur(3px);
-  opacity: 0.7;
+  //opacity: 0.7;
 
   .page-icon {
     opacity: 0;
