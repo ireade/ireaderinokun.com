@@ -24,8 +24,10 @@ body {
 
 .nav-icon {
   border: 0;
-  background-color: #000;
-  color: #fff;
+  //background-color: #000;
+  //color: #fff;
+  background-color: #fff;
+  color: #000;
   height: 35px;
   width: 35px;
   display: flex;
@@ -42,10 +44,12 @@ body {
   animation-duration: 2s;
   animation-delay: 4.8s;
 
-  position: absolute;
-  position: fixed;
-  bottom: 30px;
-  left: 30px;
+  //position: absolute;
+  //position: fixed;
+  //bottom: 30px;
+  //left: 30px;
+
+  position: relative;
 
   &.nav-icon--down {
     .nav-dir-up { display: none; }
@@ -55,10 +59,10 @@ body {
     .nav-dir-down { display: none; }
   }
 
-  @media screen and (min-width: $screen-med) {
-    bottom: 50px;
-    left: 50px;
-  }
+  //@media screen and (min-width: $screen-med) {
+  //  bottom: 50px;
+  //  left: 50px;
+  //}
 
 
   .fa {

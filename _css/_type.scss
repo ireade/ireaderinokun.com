@@ -46,3 +46,34 @@ strong {
     margin-bottom: 10px;
   }
 }
+
+.site-title {
+  font-family: $monospace;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
+
+  font-size: 1.8rem;
+
+  @media screen and (min-width: $screen-small) {
+    font-size: 2rem;
+  }
+
+  @media screen and (min-width: $screen-med) {
+    font-size: 2.4rem;
+  }
+}
+
+.page-title {
+  font-family: $monospace;
+  max-width: 600px;
+
+  font-size: 1.8rem;
+
+  @media screen and (min-width: $screen-small) {
+    font-size: 2rem;
+  }
+  @media screen and (min-width: $screen-med) {
+    order: 1;
+  }
+}

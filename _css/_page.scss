@@ -43,24 +43,20 @@
 .page-header {
   display: flex;
   justify-content: space-between;
-
-  margin-bottom: 70px;
   flex-wrap: wrap;
+
+  margin-bottom: 50px;
+
+  @media screen and (min-width: $screen-small) {
+    margin-bottom: 70px;
+  }
 
   @media screen and (min-width: $screen-med) {
     margin-bottom: 100px;
     flex-wrap: nowrap;
   }
 
-  .page-title {
-    font-family: $monospace;
-    font-size: 2rem;
-    padding-right: 20px;
-    max-width: 600px;
-    @media screen and (min-width: $screen-med) {
-      order: 1;
-    }
-  }
+
 
   .fa {
     font-size: 2rem;
@@ -74,7 +70,6 @@
   }
 
 }
-
 
 .section-divider {
   height: 1px;
@@ -108,119 +103,3 @@
   }
 
 }
-
-//.page-icon {
-//  animation-name: dropIconIn;
-//  animation-duration: 2.5s;
-//
-//}
-
-
-/* Navigation ------------ */
-
-//.site-page--nav {
-//  display: flex;
-//  align-items: center;
-//  justify-content: center;
-//  text-align: center;
-//
-//  font-family: $monospace;
-//  font-size: 2rem;
-//
-//  padding: 0;
-//
-//  nav {
-//    height: 100%;
-//    width: 100%;
-//  }
-//
-//  ul {
-//    display: flex;
-//    height: 100%;
-//    width: 100%;
-//    flex-wrap: wrap;
-//  }
-//
-//  li, a {
-//    display: flex;
-//    width: 100%;
-//    align-items: center;
-//    justify-content: center;
-//    cursor: pointer;
-//  }
-//
-//  a {
-//    height: 100%;
-//  }
-//
-//
-//
-//
-//}
-//
-//
-//@keyframes nav-animation {
-//  from {
-//    transform: scale(1);
-//  }
-//
-//  50% {
-//    transform: scale(1.01);
-//    box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.2);
-//  }
-//
-//  to {
-//    transform: scale(1);
-//  }
-//}
-//
-//@mixin nav-link($color) {
-//
-//  span {
-//    border-bottom: 4px solid $color;
-//  }
-//  transition: all 0.5s;
-//  outline: none;
-//
-//}
-//
-//@mixin nav-link-hover($color) {
-//  color: #FFF;
-//  background-color: $color;
-//
-//
-//  animation-name: nav-animation;
-//  animation-duration: 1s;
-//}
-//
-//.nav-home { @include nav-link(#B7DAED) }
-//.nav-home:hover, .nav-home:focus { @include nav-link-hover(#B7DAED) }
-//
-//.nav-writing { @include nav-link(#FAEDB8) }
-//.nav-writing:hover, .nav-writing:focus { @include nav-link-hover(#FAEDB8) }
-//
-//.nav-speaking { @include nav-link(#B7DAED) }
-//.nav-speaking:hover, .nav-speaking:focus { @include nav-link-hover(#B7DAED) }
-//
-//.nav-opensource { @include nav-link(#B7DAED) }
-//.nav-opensource:hover, .nav-opensource:focus { @include nav-link-hover(#B7DAED) }
-//
-//.nav-work { @include nav-link(#B7DAED) }
-//.nav-work:hover, .nav-work:focus { @include nav-link-hover(#B7DAED) }
-//
-//.nav-contact { @include nav-link(#B7DAED) }
-//.nav-contact:hover, .nav-contact:focus { @include nav-link-hover(#B7DAED) }
-//
-
-
-
-
-
-
-
-
-
-
-
-
-
