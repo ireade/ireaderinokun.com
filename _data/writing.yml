@@ -32,7 +32,7 @@ articles:
 }
 - {
 	title: 'How to Bootstrap an Angular Application',
-	url: '',
+	url: 'https://heloangular.com/how-to-bootstrap-an-angular-application',
 	blog: 'hello-angular',
-	excerpt: '...'
+	excerpt: 'In order to launch an Angular application, we need to bootstrap it. Bootstrapping is a way for us to tell Angular where to start running our application....'
 }
