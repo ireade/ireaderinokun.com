@@ -64,13 +64,14 @@
 .work-screenshot-container {
   width: 71.5%;
   max-height: 80%;
-  left: 50%;
   top: 10%;
   position: absolute;
   overflow: hidden;
-  margin: 0 auto;
 
-  transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
 }
 
 .work-screenshot {
