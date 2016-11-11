@@ -6,6 +6,8 @@ goog.offlineGoogleAnalytics.initialize();
 const precacheFiles = [
     'https://fonts.googleapis.com/css?family=Karla:400,700|Space+Mono:400,700',
 
+    './assets/img/work/iphone.png',
+    './assets/img/work/macbook.png',
     './assets/img/ireaderinokun.png',
     './assets/img/Fronteers_BW.png'
 
