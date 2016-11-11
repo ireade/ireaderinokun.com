@@ -56,15 +56,14 @@
   }
 
   position: relative;
-  //display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 
 .work-screenshot-container {
-  width: 71.5%;
+
   max-height: 80%;
-  top: 10%;
+
   position: absolute;
   overflow: hidden;
 
@@ -72,6 +71,16 @@
   margin-right: auto;
   left: 0;
   right: 0;
+}
+
+.work-screenshot-container-desktop {
+  width: 71.5%;
+  top: 10%;
+}
+.work-screenshot-container-mobile {
+  width: 90%;
+  max-width: 274px;
+  top: 14%;
 }
 
 .work-screenshot {
@@ -87,10 +96,20 @@
 
 }
 
+.mobile-footer {
+  position: absolute;
+  left: 0;
+  bottom: 10.5%;
+}
 
-img.work-device {
+
+.work-device {
   position: relative;
   z-index: 1;
+}
+
+.work-device--iphone {
+  max-width: 300px;
 }
 
 

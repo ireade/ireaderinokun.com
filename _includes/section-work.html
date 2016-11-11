@@ -23,10 +23,19 @@
                 <p>{{ work.excerpt }}</p>
             </div>
             <figure class="work-image">
-                <div class="work-screenshot-container">
+                <div class="work-screenshot-container work-screenshot-container-{{ work.type }}">
                     <img class="work-screenshot" src="{{ work.image }}" alt="{{ work.title }}">
+
+                    {% if work.mobile_footer %}
+                    <img class="mobile-footer" src="{{ work.mobile_footer }}" alt="">
+                    {% endif %}
                 </div>
+
+                {% if work.type == 'mobile' %}
+                <img class="work-device work-device--iphone" src="/assets/img/work/iphone.png" alt="">
+                {% else %}
                 <img class="work-device work-device--macbook" src="/assets/img/work/macbook.png" alt="">
+                {% endif %}
             </figure>
         </article>
         {% endfor %}
