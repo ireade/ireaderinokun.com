@@ -25,7 +25,7 @@
 .site-page--active {
   .page-icon {
     animation-name: dropIconIn;
-    animation-duration: 2.5s;
+    animation-duration: 2s;
     opacity: 1;
   }
 }
@@ -55,21 +55,27 @@
   }
 
 
-  .page-icon {
-    display: block;
-    margin-bottom: 10px;
-    width: 25px;
-    height: 25px;
+}
 
-    @media screen and (min-width: $screen-med) {
-      order: 2;
-      width: 30px;
-      height: 30px;
-    }
+.page-title {
+
+  @media screen and (min-width: $screen-med) {
+    padding-right: 20px;
   }
 
+}
 
+.page-icon {
+  display: block;
+  margin-bottom: 10px;
+  width: 25px;
+  height: 25px;
 
+  @media screen and (min-width: $screen-med) {
+    order: 2;
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .section-divider {
@@ -84,7 +90,7 @@
 @keyframes dropIconIn {
 
   from {
-    transform: translateY(-200px) rotate(10deg);
+    transform: translateY(-130px) rotate(10deg);
   }
 
   40% {
@@ -104,14 +110,4 @@
   }
 
 }
-//
-//@keyframes dropIconOut {
-//  from {
-//    transform: translateY(0) rotate(0);
-//    opacity: 1;
-//  }
-//  to {
-//    transform: translateY(-200px);
-//    opacity: 0;
-//  }
-//}
+

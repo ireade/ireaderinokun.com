@@ -4,7 +4,7 @@ importScripts('assets/js/lib/sw-offline-google-analytics.js');
 goog.offlineGoogleAnalytics.initialize();
 
 const precacheFiles = [
-    new Request('https://fonts.googleapis.com/css?family=Karla:400,700|Space+Mono:400,700'),
+    'https://fonts.googleapis.com/css?family=Karla:400,700|Space+Mono:400,700',
 
     './assets/img/ireaderinokun.png',
     './assets/img/Fronteers_BW.png'
