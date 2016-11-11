@@ -16,7 +16,7 @@ articles:
 	title: 'Styling Broken Images',
 	url: 'https://bitsofco.de/styling-broken-images/',
 	blog: 'bitsofcode',
-	excerpt: "Broken images are ugly. But they don’t always have to be. We can use CSS to apply styles to the <img> element to provide a better experience than the default. To understand how we can style broken images, there are two facts about the way the <img> element behaves that we need to understand first..."
+	excerpt: "Broken images are ugly. But they don’t always have to be. We can use CSS to apply styles to the img element to provide a better experience than the default. To understand how we can style broken images, there are two facts about the way the img element behaves that we need to understand first..."
 }
 - {
 	title: 'The Accessibility Cheatsheet',
