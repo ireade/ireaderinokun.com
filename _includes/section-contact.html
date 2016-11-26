@@ -14,7 +14,8 @@
         <form action="https://formspree.io/ire@ireaderinokun.com" method="POST" class="emailme-form">
             <input type="hidden" name="_subject" value="Contact Ire Aderinokun" />
             <div class="emailme-preheader">
-                {% include icon-mail.svg %}
+                <div class="left">{% include icon-mail.svg %}</div>
+                <div class="right"></div>
             </div>
             <div class="emailme-header">
                 <div class="emailme-header-line">
@@ -36,13 +37,14 @@
                 </div>
             </div>
             <div class="emailme-body">
+                Hey Ire!<br>
                 <p class="emailme-message">
-                    <small>Choose a subject to get started</small>
+                    <textarea name="nojs_message" rows="2" aria-label="message" placeholder="Your message"></textarea>
                 </p>
-
                 Best regards,<br>
-                <input type="text" aria-label="Full Name" placeholder="Your name">
+                <input type="text" name="Full Name" aria-label="Full Name" placeholder="Your name">
             </div>
+            <input type="text" name="_gotcha" style="display:none" />
             <div class="emailme-footer">
                 <button type="submit" class="emailme-submit">Email Me</button>
             </div>

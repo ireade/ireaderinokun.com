@@ -1,0 +1,49 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/Cellar/node/6.3.1/bin/node /usr/local/bin/firebase deploy
+[debug] CLI Version:  3.1.0
+[debug] Platform:     darwin
+[debug] Node Version: v6.3.1
+[debug] Time:         Sat Nov 26 2016 20:49:15 GMT+0100 (WAT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/ireaderinokun-staging 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/ireaderinokun-staging/tokens 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'ireaderinokun-staging'...
+[info] 
+[info] i  deploying hosting
+[info] ✔  database: rules ready to deploy.
+[info] i  hosting: preparing _site directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/ireaderinokun-staging/uploads/-KXXB8EAxo4gs0qA5UZl?fileCount=72&message= 
+[debug] TypeError: Cannot read property 'processIncomingMessage' of undefined
+    at instance.processIncomingMessage (/usr/local/lib/node_modules/firebase-tools/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/node_modules/websocket-extensions/lib/websocket_extensions.js:133:19)
+    at instance._emitMessage (/usr/local/lib/node_modules/firebase-tools/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/hybi.js:442:22)
+    at instance._emitFrame (/usr/local/lib/node_modules/firebase-tools/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/hybi.js:405:19)
+    at instance.parse (/usr/local/lib/node_modules/firebase-tools/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/hybi.js:144:18)
+    at instance.parse (/usr/local/lib/node_modules/firebase-tools/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/driver/client.js:56:58)
+    at IO.write (/usr/local/lib/node_modules/firebase-tools/node_modules/firebase/node_modules/faye-websocket/node_modules/websocket-driver/lib/websocket/streams.js:80:16)
+    at TLSSocket.ondata (_stream_readable.js:556:20)
+    at emitOne (events.js:96:13)
+    at TLSSocket.emit (events.js:188:7)
+    at readableAddChunk (_stream_readable.js:177:18)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/Cellar/node/6.3.1/bin/node /usr/local/bin/firebase deploy
+[debug] CLI Version:  3.1.0
+[debug] Platform:     darwin
+[debug] Node Version: v6.3.1
+[debug] Time:         Sat Nov 26 2016 20:52:03 GMT+0100 (WAT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/ireaderinokun-staging 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/ireaderinokun-staging/tokens 
+[debug] <<< HTTP RESPONSE 200
