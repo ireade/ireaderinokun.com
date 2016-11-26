@@ -2,8 +2,51 @@
     <header class="page-header">
         {% include icon-mail.svg %}
         <h2 class="page-title">
-            I'm <strong>focused and friendly</strong>. You can find me sharing my projects on <a href="https://www.github.com/ireade">github</a>, interesting links on <a href="https://www.twitter.com/ireaderinokun">twitter</a>, or random thoughts on <a href="https://medium.com/@ireade">medium</a>. Want to chat? Email me at <a href="mailto:ire@ireaderinokun.com">ire@ireaderinokun.com</a>
+            I'm <strong>focused and friendly</strong>. You can find me sharing my projects on <a
+                href="https://www.github.com/ireade">github</a>, interesting links on <a
+                href="https://www.twitter.com/ireaderinokun">twitter</a>, or random thoughts on <a
+                href="https://medium.com/@ireade">medium</a>.</a>
         </h2>
     </header>
+
+    <section class="section-half">
+        <h3 class="sr-only">Contact Me</h3>
+        <form action="https://formspree.io/ire@ireaderinokun.com" method="POST" class="emailme-form">
+            <input type="hidden" name="_subject" value="Contact Ire Aderinokun" />
+            <div class="emailme-preheader">
+                {% include icon-mail.svg %}
+            </div>
+            <div class="emailme-header">
+                <div class="emailme-header-line">
+                    <label for="email" class="label">From:</label>
+                    <input type="text" class="value" name="email" id="email" placeholder="your@email.com" required>
+                </div>
+                <div class="emailme-header-line">
+                    <p class="label">To:</p>
+                    <p class="value">Ire Aderinokun</p>
+                </div>
+                <div class="emailme-header-line">
+                    <label class="label" for="subject">Subject:</label>
+                    <select name="subject" id="subject" name="subject" required>
+                        <option value="" disabled selected hidden>Choose an option</option>
+                        <option value="Let's Work Together" data-subject="work">Let's Work Together</option>
+                        <option value="I Need Advice" data-subject="advice">I Need Advice</option>
+                        <option value="Hello!" data-subject="other">Hello!</option>
+                    </select>
+                </div>
+            </div>
+            <div class="emailme-body">
+                <p class="emailme-message">
+                    <small>Choose a subject to get started</small>
+                </p>
+
+                Best regards,<br>
+                <input type="text" aria-label="Full Name" placeholder="Your name">
+            </div>
+            <div class="emailme-footer">
+                <button type="submit" class="emailme-submit">Email Me</button>
+            </div>
+        </form>
+    </section>
 </section>
 

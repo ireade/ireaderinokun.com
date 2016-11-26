@@ -58,6 +58,16 @@ body {
 }
 
 
+.section-half {
+  width: 100%;
+
+  @media screen and (min-width: $screen-med) {
+    width: 50%;
+    min-width: 400px;
+    padding-right: 15px;
+  }
+}
+
 
 
 

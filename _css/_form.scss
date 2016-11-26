@@ -1,0 +1,142 @@
+$emailme-padding: 10px 15px;
+
+.emailme-form {
+  background: #fff;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  overflow: hidden;
+
+  @media screen and (min-width: $screen-med) {
+    background: #fff;
+  }
+
+  .value {
+    font-size: 1.8rem;
+  }
+
+  input,
+  select,
+  textarea {
+    display: inline;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid transparent;
+
+    font-size: 1.8rem;
+    line-height: 1;
+    font-family: $sans-serif;
+    color: red;
+
+    outline: none;
+    width: auto;
+    min-width: 150px;
+  }
+
+  textarea {
+    width: 100%;
+  }
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+
+    option {
+      border-bottom: 1px solid transparent;
+    }
+  }
+
+  input:focus,
+  input:active {
+    //border-bottom: 1px solid #000;
+  }
+}
+
+.emailme-preheader,
+.emailme-header,
+.emailme-body,
+.emailme-footer {
+  padding: $emailme-padding;
+}
+
+.emailme-preheader {
+  background: rgb(245,245,245);
+  border-bottom: 1px solid rgb(230,230,230);
+  padding-bottom: 0;
+}
+.emailme-header {
+  border-bottom: 1px dashed rgb(230,230,230);
+}
+
+.emailme-header-line {
+  display: flex;
+
+  .label {
+    width: 20%;
+
+  }
+  .value {
+    width: 70%;
+    padding: 2px 0;
+  }
+}
+
+
+.emailme-body {
+  font-size: 1.8rem;
+
+  input,
+  select {
+    padding: 2px 0;
+    margin: 0 3px;
+    border-bottom: 1px dashed rgb(220,220,220);
+  }
+}
+
+.emailme-message {
+  margin-bottom: 15px;
+
+  input,
+  select {
+    text-align: center;
+    padding: 2px 5px;
+  }
+
+  textarea {
+
+  }
+
+  small {
+    font-style: italic;
+    font-size: 1.4rem;
+  }
+}
+
+
+.emailme-footer {
+  padding-bottom: 15px;
+  text-align: right;
+}
+
+.emailme-submit {
+  display: inline-block;
+  background: rgb(66, 133, 244);
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1;
+  font-family: $sans-serif;
+  font-size: 1.4rem;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.1);
+}
+
+
+
+select:invalid {
+  color: rgb(160,160,160);
+}
+
