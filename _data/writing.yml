@@ -36,3 +36,17 @@ articles:
 	blog: 'hello-angular',
 	excerpt: 'In order to launch an Angular application, we need to bootstrap it. Bootstrapping is a way for us to tell Angular where to start running our application....'
 }
+
+more_articles:
+- {
+	title: 'On :not and Specificity',
+	url: 'https://bitsofco.de/on-not-and-specificity/',
+	blog: 'bitsofcode',
+	excerpt: "The negation pseudo-class, :not, can be incredibly useful. It allows us to target elements based on what attributes they don't have, rather than what they do. This helps us avoid writing extra, increasingly specific, rules in an attempt to override previous ones. ..."
+}
+- {
+	title: 'How to Bootstrap an Angular Application',
+	url: 'https://heloangular.com/how-to-bootstrap-an-angular-application',
+	blog: 'hello-angular',
+	excerpt: 'In order to launch an Angular application, we need to bootstrap it. Bootstrapping is a way for us to tell Angular where to start running our application....'
+}

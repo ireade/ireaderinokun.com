@@ -30,6 +30,29 @@
             </article>
             {% endfor %}
         </section>
+        <section class="excerpts excerpts-highlightEffect desktop-only">
+            <h3 class="sr-only">Past Talks</h3>
+            {% for talk in site.data.speaking.more_talks %}
+            <article class="excerpt"
+                     {% if talk.image %}data-slide="{{talk.image}}"{% endif %}>
+                <h4 class="excerpt-title">
+                    {{ talk.title }}</a>
+                </h4>
+                <p class="excerpt-content">
+                    {{ talk.conference }}. {{ talk.date }}. {{ talk.location }}<br>
+                    {% if talk.event_page_url %}
+                    <a href="{{talk.event_page_url}}" target="_blank">Event Page</a> |
+                    {% endif %}
+                    {% if talk.slides_url %}
+                    <a href="{{talk.slides_url}}" target="_blank">Slides</a>
+                    {% endif %}
+                    {% if talk.video_url %}
+                    | <a href="{{talk.video_url}}" target="_blank">Video</a>
+                    {% endif %}
+                </p>
+            </article>
+            {% endfor %}
+        </section>
 
         <!--<div class="section-divider"></div>-->
 

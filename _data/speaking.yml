@@ -1,5 +1,14 @@
 talks:
 - {
+  title: 'Building Modern Progressive Web Apps',
+	conference: 'GDG South West Nigeria DevFest',
+	location: 'Lagos, Nigeria',
+	date: '25 November 2016',
+	event_page_url: 'http://devfestsw.gdg.ng/speakers/',
+	slides_url: 'https://speakerdeck.com/ireade/building-modern-progressive-web-apps',
+  image: '/assets/img/speaking/talk_gdg_2016.jpg'
+}
+- {
   title: 'What about CSS? Progressive Enhancement & CSS',
 	conference: 'Fronteers',
 	location: 'Amsterdam, Netherlands',
@@ -26,6 +35,11 @@ talks:
 	slides_url: 'https://speakerdeck.com/ireade/going-offline-first',
 	image: '/assets/img/speaking/talk_pwa_lagos_2016.jpg'
 }
+
+
+
+
+more_talks:
 - {
 	title: 'Going "Offline First"',
 	conference: 'Google Progressive Web Apps Roadshow',

@@ -2,7 +2,7 @@
     <header class="page-header">
         {% include icon-code-fork.svg %}
         <h2 class="page-title">
-            I <strong>build products & tools</strong> for everyone, and <a href="https://www.github.com/ireade">share the code</a>
+            I <strong>build products & tools</strong> that are used by hundreds of developers, and <a href="https://www.github.com/ireade">share the code</a>
         </h2>
     </header>
     <section class="excerpts excerpts-highlightEffect">
@@ -17,9 +17,9 @@
         {% endfor %}
     </section>
 
-    <div class="section-divider"></div>
+    <div class="section-divider desktop-only"></div>
 
-    <section>
+    <section class="desktop-only">
         <h3 class="sr-only">More Projects</h3>
         <ul class="ul">
             {% for project in site.data.projects.other_projects %}
