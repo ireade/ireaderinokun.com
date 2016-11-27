@@ -25,18 +25,19 @@ articles:
 	excerpt: "Over the past 5 months, I have been doing Udacity’s Senior Web Developer Nanodegree. For my final Capstone project (I've graduated now! I had to create my own web application that would function just as a native mobile application would, using all I learned throughout the Nanodegree ..."
 }
 - {
+	title: 'How to Bootstrap an Angular Application',
+	url: 'https://heloangular.com/how-to-bootstrap-an-angular-application',
+	blog: 'hello-angular',
+	excerpt: 'In order to launch an Angular application, we need to bootstrap it. Bootstrapping is a way for us to tell Angular where to start running our application....'
+}
+- {
 	title: 'The Accessibility Cheatsheet',
 	url: 'https://bitsofco.de/the-accessibility-cheatsheet',
 	blog: 'bitsofcode',
 	excerpt: 'We all know that accessibility is important. The problem is, it is not always clear what exactly we can do to make our sites more accessible. The Web Accessibility Initiative created some Web Content Accessibility Guidelines (WCAG) targeted at us, web content developers, to create more accessible websites...'
 }
 
-- {
-	title: 'How to Bootstrap an Angular Application',
-	url: 'https://heloangular.com/how-to-bootstrap-an-angular-application',
-	blog: 'hello-angular',
-	excerpt: 'In order to launch an Angular application, we need to bootstrap it. Bootstrapping is a way for us to tell Angular where to start running our application....'
-}
+
 
 more_articles:
 - {

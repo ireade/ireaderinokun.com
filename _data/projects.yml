@@ -1,32 +1,32 @@
 projects:
 - {
+	title: 'Formhack',
+	stars: '300',
+	url: 'http://formhack.io',
+	excerpt: 'Formhack is a "hackable sass-based form reset". Although there are standard css resets for forms out there, I wanted to create one that I could easily customize for any site, without having to worry about cross-browser compatibility and differences.'
+}
+- {
 	title: 'Gulp Email Workflow',
+	stars: '60',
 	url: 'https://github.com/ireade/gulp-email-workflow',
 	excerpt: 'A workflow for building HTML emails using Gulp. It comes with a default MailChimp-supported template.'
 }
 - {
 	title: 'The (Unofficial) CanIUse Embed',
+	stars: '62',
 	url: 'https://caniuse.bitsofco.de',
 	excerpt: 'An embedabble widget to display up-to-date data from caniuse.com. Displays feature support data for multiple versions of the 10 major browsers. Configurable, reliable, and fully responsive.'
 }
 - {
 	title: 'Opera Mini Tips',
+	stars: '51',
 	url: 'https://operamini.tips/',
 	excerpt: 'A collection of front-end development features not supported by Opera Mini and some crowdsourced workarounds for them.'
 }
-- {
-	title: 'Formhack',
-	url: 'http://formhack.io',
-	excerpt: 'Formhack is a "hackable sass-based form reset". Although there are standard css resets for forms out there, I wanted to create one that I could easily customize for any site, without having to worry about cross-browser compatibility and differences.'
-}
+
 
 
 other_projects:
-- {
-	title: 'Open Writer',
-	url: 'https://github.com/ireade/openwriter',
-	excerpt: 'Open Writer is a free theme for the <a href="http://ghost.org" target="_blank">Ghost blogging platform</a>. It has been consistently listed as one of the top free themes on their theme Marketplace, and has been featured in a list of <a href="http://winningwp.com/best-ghost-themes/" target="_blank">"Superb Free and Premium Ghost Themes"</a>.'
-}
 - {
 	title: 'Designer News for Pebble',
 	url: 'https://apps.getpebble.com/applications/55b75efd3d39bb179a00003d',
@@ -36,6 +36,11 @@ other_projects:
 	title: 'Designer News for Slack',
 	url: 'http://ire.codes/designernewsbot/',
 	excerpt: 'A Slack bot that fetches and displays stories from <a href="http://designernews.co">Designer News</a> directly into Slack.'
+}
+- {
+	title: 'Open Writer',
+	url: 'https://github.com/ireade/openwriter',
+	excerpt: 'Open Writer is a free theme for the <a href="http://ghost.org" target="_blank">Ghost blogging platform</a>. It has been consistently listed as one of the top free themes on their theme Marketplace, and has been featured in a list of <a href="http://winningwp.com/best-ghost-themes/" target="_blank">"Superb Free and Premium Ghost Themes"</a>.'
 }
 - {
 	title: 'Khaled Bot',

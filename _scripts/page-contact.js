@@ -7,6 +7,7 @@ I work at <input type="text" aria-label="Your Company" name="company" placeholde
     <option value="" disabled selected hidden>Choose a role</option>
     <option value="Front-End Developer">Front-End Developer</option>
     <option value="UI/UX Designer">UI/UX Designer</option>
+    <option value="Project Manager">Project Manager</option>
     <option value="Consultant">Consultant</option>
 </select>. 
 Our project aims to launch in 
@@ -26,11 +27,11 @@ and we have a budget of
 `,
 
         advice: `
-I'm currently a <input type="text" name="your_role" id="advice_your_role" aria-label="Your Role" placeholder="Comp Science Student"> and I need some advice with <input type="text" aria-label="name" name="advice_your_topic" placeholder="Learning JavaScript">.
+I'm currently a <input type="text" name="your_role" id="advice_your_role" aria-label="Your Role" placeholder="Comp Science Student" required> and I need some advice with <input type="text" aria-label="name" name="advice_your_topic" placeholder="Learning JavaScript" required>.
 `,
 
         other: `
-<textarea name="other_message" rows="2" aria-label="message" placeholder="Just saying hi :)"></textarea>
+<textarea name="other_message" rows="2" aria-label="message" placeholder="Just saying hi :)" required></textarea>
 `
     };
 
