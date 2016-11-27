@@ -1,40 +1,5 @@
 {
 
-    function makeRequest (opts) {
-        return new Promise(function (resolve, reject) {
-            var xhr = new XMLHttpRequest();
-            xhr.open(opts.method, opts.url);
-            xhr.onload = function () {
-                if (this.status >= 200 && this.status < 300) {
-                    resolve(xhr.response);
-                } else {
-                    reject({
-                        status: this.status,
-                        statusText: xhr.statusText
-                    });
-                }
-            };
-            xhr.onerror = function () {
-                reject({
-                    status: this.status,
-                    statusText: xhr.statusText
-                });
-            };
-            if (opts.headers) {
-                Object.keys(opts.headers).forEach(function (key) {
-                    xhr.setRequestHeader(key, opts.headers[key]);
-                });
-            }
-            var params = opts.params;
-            if (params && typeof params === 'object') {
-                params = Object.keys(params).map(function (key) {
-                    return encodeURIComponent(key) + '=' + encodeURIComponent(params[key]);
-                }).join('&');
-            }
-            xhr.send(params);
-        });
-    }
-
     const emailMessages = {
         work: `
 I work at <input type="text" aria-label="Your Company" name="company" placeholder="Your Company Name">, and we would like you to work on our project as a 
@@ -82,33 +47,33 @@ I'm currently a <input type="text" name="your_role" id="advice_your_role" aria-l
         emailBodyElement.innerHTML = emailMessages[subject];
     }
 
-    function handleSuccess() {
-        emailForm.classList.remove('sending');
-        emailForm.classList.add('success');
-        setTimeout(function() {
-            const element = document.querySelector('.emailme-preheader .left');
-            element.style.textAlign = 'center';
-            element.innerHTML = `Form Successfully Submited!<br>`;
-            emailForm.classList.add('finish');
-        }, 1000);
 
-    }
+    function showFormProgress() {
 
-    function handleError() {
-        emailForm.classList.remove('sending');
-        emailForm.classList.add('error');
-        setTimeout(function() {
-            emailForm.classList.remove('error');
-        }, 1000);
-    }
+        if ( !emailForm.checkValidity() ) return false;
 
-    function submitForm() {
         emailForm.classList.add('sending');
 
-        console.log(emailForm)
+        function incrementProgress() {
+            let elementWidth = document.querySelector('.emailme-preheader .left').style.width;
+            elementWidth = parseInt( elementWidth.split('%')[0] );
+            if ( elementWidth === 100 ) {
+                return false;
+            } else {
+                elementWidth += 1;
+                document.querySelector('.emailme-preheader .left').style.width = `${elementWidth}%`;
+            }
+        }
+
+        function startInterval() {
+            setInterval(function() {
+                incrementProgress();
+            }, 100);
+        }
 
         setTimeout(function() {
-            handleSuccess();
+            document.querySelector('.emailme-preheader .left').style.width = '70%';
+            startInterval();
         }, 3000);
     }
 
@@ -117,19 +82,9 @@ I'm currently a <input type="text" name="your_role" id="advice_your_role" aria-l
         changeEmailBody(selectedOption);
     })
 
-    // submitButtonElement.addEventListener('click', function(e) {
-    //
-    //     e.preventDefault();
-    //
-    //     console.log(e);
-    //     submitForm();
-    //     const formIsValid = emailForm.checkValidity();
-    //     if ( formIsValid ) {
-    //         submitForm();
-    //     } else {
-    //         formMessageElement.innerHTML = `Looks like you're missing some fields. Make sure everything is filled out.`
-    //     }
-    // });
+    submitButtonElement.addEventListener('click', function(e) {
+        showFormProgress();
+    });
 
 
 

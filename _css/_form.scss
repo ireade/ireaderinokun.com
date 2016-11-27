@@ -189,31 +189,17 @@ select:invalid {
     cursor: progress;
   }
 
-  .emailme-preheader .page-icon {
-    left: 80%;
-    transition: left 2s;
-  }
+  //.emailme-preheader .page-icon {
+  //  left: 80%;
+  //  transition: left 2s;
+  //}
 
   .emailme-preheader .left {
+    display: inline-flex;
+    justify-content: flex-end;
     border-bottom: 2px solid green;
-    width: 80%;
-    transition: width 2s;
-  }
-
-  .emailme-preheader .right {
-    display: none;
-  }
-}
-
-.emailme-form.success {
-  .emailme-preheader .left {
-    width: 100%;
-    transition: width 1s;
-  }
-
-  .emailme-preheader .page-icon {
-    left: 120%;
-    transition: left 2s;
+    width: 70%;
+    transition: width 3s;
   }
 
   .emailme-preheader .right {
@@ -222,21 +208,4 @@ select:invalid {
 }
 
 
-.emailme-form.error {
 
-  .emailme-preheader .page-icon {
-    left: 5%;
-    transition: left 1s;
-  }
-
-  .emailme-preheader .left {
-    border-bottom: 2px solid red;
-    width: 0%;
-    transition: width 1s;
-  }
-
-}
-
-.emailme-form.finish {
-
-}
