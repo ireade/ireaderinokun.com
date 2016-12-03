@@ -23,7 +23,7 @@ work:
 - {
   title: 'Studio of Modé',
   roles: ['design', 'front-end', 'pm'],
-  excerpt: "Modé, the founder of the Studio of Modé, and I worked on the deisgn together, and I developed the website on a combination of <strong>Wordpress</strong> and <strong>Shopify</strong>. The website is divided into three main parts - Modé's portfolfio (SEE), the studio and gallery space (STUDIO), and the online shop (SHOP). A key aspect of the design of the website was to make it seem as minimal as possible, despite the large amount of information avaiable. It was particularly important to have the website completely accessible on all devices due to the younger audience.",
+  excerpt: "Modé, the founder of the Studio of Modé, and I worked on the design together, and I developed the website on a combination of <strong>Wordpress</strong> and <strong>Shopify</strong>. The website is divided into three main parts - Modé's portfolfio (SEE), the studio and gallery space (STUDIO), and the online shop (SHOP). A key aspect of the design of the website was to make it seem as minimal as possible, despite the large amount of information avaiable. It was particularly important to have the website completely accessible on all devices due to the younger audience.",
   type: 'desktop',
   image: '/assets/img/work/studioofmode.png'
 }

@@ -1,7 +1,7 @@
 blogs: {
   bitsofcode: {
       name: 'bitsofcode',
-      color: '#67b3dd',
+      color: '#00749a',
       url: 'https://bitsofco.de'
   },
   hello-angular: {
