@@ -136,6 +136,11 @@
     /assets/css/main.css" | prepend: site.baseurl }}">
 </noscript>
 <script>
+    // Opera Detect
+    var operaDetect=new Object;operaDetect.isOpera=window.opera|window.opr|navigator.userAgent.indexOf(" OPR/")>-1|navigator.userAgent.indexOf(" Coast/")>-1|navigator.userAgent.indexOf(" OPiOS/")>-1,operaDetect.isOpera?(operaDetect.results=new Object,navigator.userAgent.indexOf("Mobile")>-1|navigator.userAgent.indexOf("Opera Mini/")>-1?operaDetect.results.platform="Mobile/Tablet":navigator.userAgent.indexOf("OMI/")>-1?operaDetect.results.platform="TV":operaDetect.results.platform="Desktop",navigator.userAgent.indexOf("Android")>-1?operaDetect.results.OS="Android":navigator.userAgent.indexOf("Coast/")>-1|navigator.userAgent.indexOf("iPad")>-1|navigator.userAgent.indexOf("iPhone")>-1?operaDetect.results.OS="iOS":navigator.userAgent.indexOf("OS X")>-1?operaDetect.results.OS="OSX":navigator.userAgent.indexOf("Windows")>-1?operaDetect.results.OS="Windows":operaDetect.results.OS="Other",navigator.userAgent.indexOf("OPiOS/")>-1|navigator.userAgent.indexOf("Opera Mini/")>-1|(navigator.userAgent.indexOf("OPR/15")>-1&&navigator.userAgent.indexOf("Mobile")>-1)?operaDetect.results.browser="Opera Mini":navigator.userAgent.indexOf("OPR/")>-1&&navigator.userAgent.indexOf("Mobile")>-1?operaDetect.results.browser="Opera Mobile":navigator.userAgent.indexOf("Coast/")>-1?operaDetect.results.browser="Opera Coast":navigator.userAgent.indexOf("OPR/")>-1?operaDetect.results.browser="Opera Desktop":operaDetect.results.browser="Unknown",navigator.userAgent.indexOf("Presto/")>-1&&navigator.userAgent.indexOf("Opera Mini/")>-1?(operaDetect.results.mode="Extreme Savings",operaDetect.isExtremeMode=1):(operaDetect.results.mode="High/Normal Savings",operaDetect.isExtremeMode=0)):(operaDetect.results=0,operaDetect.isExtremeMode=0);
+
+
+    // loadDefferedStyles
     var loadDeferredStyles = function () {
         var addStylesNode = document.getElementById("deferred-styles");
         var replacement = document.createElement("div");
@@ -143,17 +148,20 @@
         document.body.appendChild(replacement)
         addStylesNode.parentElement.removeChild(addStylesNode);
     };
-    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-            webkitRequestAnimationFrame || msRequestAnimationFrame;
-    if (raf) raf(function () {
-        window.setTimeout(loadDeferredStyles, 0);
-    });
-    else window.addEventListener('load', loadDeferredStyles);
+
+    if (operaDetect.isExtremeMode) {
+        loadDeferredStyles();
+    } else {
+        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+                webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if (raf) raf(function () {
+            window.setTimeout(loadDeferredStyles, 0);
+        });
+        else window.addEventListener('load', loadDeferredStyles);
+    }
 </script>
-<script src="{{ "
-/assets/js/main.js" | prepend: site.baseurl }}"></script>
-<
-script >
+<script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
+<script >
 (function (i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
     i[r] = i[r] || function () {
