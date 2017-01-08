@@ -151,7 +151,9 @@
 
     if (operaDetect.isExtremeMode) {
         loadDeferredStyles();
+        alert("extreme mode");
     } else {
+        console.log("not extreme mode");
         var raf = requestAnimationFrame || mozRequestAnimationFrame ||
                 webkitRequestAnimationFrame || msRequestAnimationFrame;
         if (raf) raf(function () {
