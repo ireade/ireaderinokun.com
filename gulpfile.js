@@ -11,7 +11,11 @@ var sass = require('gulp-sass');
 var postcss = require('gulp-postcss');
 var scss = require('postcss-scss');
 var autoprefixer = require('autoprefixer');
+var postcssCriticalCSS = require('postcss-critical-css');
 var postcssProcessors = [
+	postcssCriticalCSS({
+		outputPath: 'assets/css'
+	}),
 	autoprefixer( {
 		browsers: [
 			'Explorer >= 11',
@@ -47,7 +51,7 @@ gulp.task('css', function() {
 			postcss(postcssProcessors, {syntax: scss})
 		)
 		.pipe(
-			sass({ outputStyle: 'compressed' }) // compressed
+			sass({ outputStyle: 'expanded' }) // compressed
 			.on('error', gutil.log)
 		)
 		.pipe(gulp.dest('assets/css'));

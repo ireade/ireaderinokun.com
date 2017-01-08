@@ -1,5 +1,12 @@
 /* Home ------------ */
 
+@critical {
+  .bar {
+    border: 10px solid gold;
+    color: gold;
+  }
+}
+
 .site-page--home {
   display: flex;
   justify-content: flex-start;
