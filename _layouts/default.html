@@ -31,12 +31,9 @@
 
 
     <style>
-
-
         html {
             box-sizing: border-box;
         }
-
         html, body {
             margin: 0;
         }
@@ -124,59 +121,52 @@
         }
 
     </style>
-
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
-
-
 </head>
 <body>
 
 {{content}}
 
 <noscript id="deferred-styles">
-
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
 </noscript>
 <script>
     // Opera Detect
-//    var operaDetect = new Object;
-//    operaDetect.isOpera = window.opera |
-//            window.opr |
-//            ( navigator.userAgent.indexOf(' OPR/') > -1 ) |
-//            ( navigator.userAgent.indexOf(' Coast/') > -1 ) |
-//            ( navigator.userAgent.indexOf(' OPiOS/') > -1 );
-//    if ( operaDetect.isOpera ) {
-//        if ( (navigator.userAgent.indexOf('Presto/') > -1) &&
-//                (navigator.userAgent.indexOf('Opera Mini/') > -1) ) {
-//            operaDetect.isExtremeMode = 1;
-//        } else {
-//            operaDetect.isExtremeMode = 0;
-//        }
-//    } else {
-//        operaDetect.isExtremeMode = 0;
-//    }
-//
-//
-//    // loadDefferedStyles
-//    var loadDeferredStyles = function () {
-//        var addStylesNode = document.getElementById("deferred-styles");
-//        var replacement = document.createElement("div");
-//        replacement.innerHTML = addStylesNode.textContent;
-//        document.body.appendChild(replacement)
-//        addStylesNode.parentElement.removeChild(addStylesNode);
-//    };
-//
-//    if (operaDetect.isExtremeMode) {
-//        loadDeferredStyles();
-//        alert("extreme mode");
-//    } else {
-//        console.log("not extreme mode");
-//        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-//                webkitRequestAnimationFrame || msRequestAnimationFrame;
-//        if (raf) raf(function () {
-//            window.setTimeout(loadDeferredStyles, 0);
-//        });
-//        else window.addEventListener('load', loadDeferredStyles);
-//    }
+    var operaDetect = new Object;
+    operaDetect.isOpera = window.opera |
+            window.opr |
+            ( navigator.userAgent.indexOf(' OPR/') > -1 ) |
+            ( navigator.userAgent.indexOf(' Coast/') > -1 ) |
+            ( navigator.userAgent.indexOf(' Opera Mini/') > -1 ) |
+            ( navigator.userAgent.indexOf(' OPiOS/') > -1 );
+    if ( operaDetect.isOpera ) {
+        if ( (navigator.userAgent.indexOf('Presto/') > -1) &&
+                (navigator.userAgent.indexOf('Opera Mini/') > -1) ) {
+            operaDetect.isExtremeMode = 1;
+        } else {
+            operaDetect.isExtremeMode = 0;
+        }
+    } else {
+        operaDetect.isExtremeMode = 0;
+    }
+
+    var loadDeferredStyles = function () {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+    };
+
+    if (operaDetect.isExtremeMode) {
+        loadDeferredStyles();
+    } else {
+        var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+                webkitRequestAnimationFrame || msRequestAnimationFrame;
+        if (raf) raf(function () {
+            window.setTimeout(loadDeferredStyles, 0);
+        });
+        else window.addEventListener('load', loadDeferredStyles);
+    }
 </script>
 <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
 <script >
