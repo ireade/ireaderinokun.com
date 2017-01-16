@@ -29,6 +29,9 @@ and we have a budget of
         advice: `
 I'm currently a <input type="text" name="your_role" id="advice_your_role" aria-label="Your Role" placeholder="Comp Science Student" required> and I need some advice with <input type="text" aria-label="name" name="advice_your_topic" placeholder="Learning JavaScript" required>.
 `,
+        speaking: `
+        I would like to invite you to speak at <input type="text" name="speaking_conference" id="speaking_conference" aria-label="Conference Name" placeholder="Your Conference" required> on the topic of <input type="text" name="speaking_topic" id="speaking_topic" aria-label="Speaking Topic" placeholder="Front-End Development" required>. The conference will take place on <input type="text" name="speaking_date" id="speaking_date" aria-label="Conference Date" placeholder="January 1st 2018" required> in <input type="text" name="speaking_location" id="speaking_location" aria-label="Conference Location" placeholder="Lagos, Nigeria" required>. 
+`,
 
         other: `
 <textarea name="other_message" rows="2" aria-label="message" placeholder="Just saying hi :)" required></textarea>
