@@ -9,11 +9,11 @@
         </header>
         <section class="excerpts excerpts-highlightEffect">
             <h3 class="sr-only">Past Talks</h3>
-            {% for talk in site.data.speaking.talks %}
+            {% for talk in site.data.speaking.featured_talks limit:4 %}
             <article class="excerpt"
                      {% if talk.image %}data-slide="{{talk.image}}"{% endif %}>
                 <h4 class="excerpt-title">
-                    {{ talk.title }}</a>
+                    {{ talk.title }}
                 </h4>
                 <p class="excerpt-content">
                     {{ talk.conference }}. {{ talk.date }}. {{ talk.location }}<br>
@@ -31,12 +31,12 @@
             {% endfor %}
         </section>
         <section class="excerpts excerpts-highlightEffect desktop-only">
-            <h3 class="sr-only">Past Talks</h3>
-            {% for talk in site.data.speaking.more_talks %}
+            <h3 class="sr-only">More Past Talks</h3>
+            {% for talk in site.data.speaking.featured_talks limit:4 offset:4 %}
             <article class="excerpt"
                      {% if talk.image %}data-slide="{{talk.image}}"{% endif %}>
                 <h4 class="excerpt-title">
-                    {{ talk.title }}</a>
+                    {{ talk.title }}
                 </h4>
                 <p class="excerpt-content">
                     {{ talk.conference }}. {{ talk.date }}. {{ talk.location }}<br>
@@ -54,12 +54,10 @@
             {% endfor %}
         </section>
 
-        <!--<div class="section-divider"></div>-->
 
-        <!--<section>-->
-            <!--<h3 class="sr-only">Upcoming Talks</h3>-->
-            <!--Upcoming talks-->
-        <!--</section>-->
+        <div>
+            <a href="/speaking/">View all talks &#10230;</a>
+        </div>
     </div>
 </section>
 
