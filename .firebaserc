@@ -1,7 +1,5 @@
 {
   "projects": {
-    "default": "ireaderinokun-70422",
-    "production": "ireaderinokun-70422",
-    "staging": "ireaderinokun-staging"
+    "default": "ireaderinokun-70422"
   }
 }
