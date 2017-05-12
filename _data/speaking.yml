@@ -73,13 +73,6 @@ all_talks:
   talks: [
       {
           title: 'What about CSS? Progressive Enhancement & CSS',
-          conference: 'WeAreDevelopers',
-          location: 'Vienna, Austria',
-          date: 'May 2017',
-          event_page_url: 'https://www.wearedevelopers.com'
-      },
-      {
-          title: 'What about CSS? Progressive Enhancement & CSS',
           conference: 'Frontend Conf',
           location: 'Zurich, Switzerland',
           date: 'September 1 2017',
@@ -98,6 +91,14 @@ all_talks:
   period: '2017',
   featured_image: '/assets/img/speaking/talk_forloop_2017.jpg',
   talks: [
+      {
+          title: 'What about CSS? Progressive Enhancement & CSS',
+          conference: 'WeAreDevelopers',
+          location: 'Vienna, Austria',
+          date: 'May 2017',
+          event_page_url: 'https://www.wearedevelopers.com',
+          slides_url: 'https://speakerdeck.com/ireade/what-about-css-progressive-enhancement-and-css-updated',
+      },
       {
           title: 'Telling My Story',
           conference: "Google International Women's Day Summit",
