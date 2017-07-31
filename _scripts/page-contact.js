@@ -42,7 +42,9 @@ I'm currently a <input type="text" name="your_role" id="advice_your_role" aria-l
     const submitButtonElement = document.querySelector('.emailme-submit');
     const emailBodyElement = document.querySelector('.emailme-message');
     const subjectField = document.getElementById('subject');
+    const subjectHiddenField = document.querySelector('input[name="_subject"]');
     const formMessageElement = document.querySelector('.emailme-preheader .right');
+    const emailSenderInput = document.querySelector('.emailme-sender');
 
     emailBodyElement.innerHTML = `<small>(Choose a subject to start drafting your message)</small>`;
 
@@ -89,6 +91,11 @@ I'm currently a <input type="text" name="your_role" id="advice_your_role" aria-l
     submitButtonElement.addEventListener('click', function(e) {
         showFormProgress();
     });
+
+    emailSenderInput.addEventListener('blur', function(e) {
+        const emailSubject = `${document.getElementById('subject').value} (${e.target.value})`;
+        subjectHiddenField.value = emailSubject;
+    })
 
 
 

@@ -92,12 +92,29 @@ all_talks:
   featured_image: '/assets/img/speaking/talk_forloop_2017.jpg',
   talks: [
       {
+          title: 'Web Components: The Future of Web Applications',
+          conference: 'Google I/O Extended',
+          location: 'Lagos, Nigeria',
+          date: '17 June 2017',
+          event_page_url: 'https://www.meetup.com/gdg-lagos/events/240562292/?rv=ea1&_af=event&_af_eid=240562292&https=on',
+          slides_url: 'https://speakerdeck.com/ireade/web-components-the-future-of-web-applications'
+      },  
+      {
+          title: 'An Introduction to UI/UX Design',
+          conference: 'forLoop Women',
+          location: 'Lagos, Nigeria',
+          date: '10 June 2017',
+          event_page_url: 'http://forloop.ng/events/a-successful-female-dev-j3fnofgu',
+          slides_url: 'https://speakerdeck.com/ireade/ux-workshop'
+      },
+      {
           title: 'What about CSS? Progressive Enhancement & CSS',
           conference: 'WeAreDevelopers',
           location: 'Vienna, Austria',
           date: 'May 2017',
           event_page_url: 'https://www.wearedevelopers.com',
           slides_url: 'https://speakerdeck.com/ireade/what-about-css-progressive-enhancement-and-css-updated',
+          video_url: 'https://www.youtube.com/watch?v=ALPQ1bXVA1w'
       },
       {
           title: 'Telling My Story',
