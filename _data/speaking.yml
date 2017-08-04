@@ -1,5 +1,13 @@
 featured_talks:
 - {
+    title: 'Web Components: The Future of Web Applications',
+    conference: 'Google I/O Extended',
+    location: 'Lagos, Nigeria',
+    date: '17 June 2017',
+    event_page_url: 'https://www.meetup.com/gdg-lagos/events/240562292/?rv=ea1&_af=event&_af_eid=240562292&https=on',
+    slides_url: 'https://speakerdeck.com/ireade/web-components-the-future-of-web-applications'
+}
+- {
     title: 'Building Modern Progressive Web Apps',
 	conference: 'GDG South West Nigeria DevFest',
 	location: 'Lagos, Nigeria',
@@ -36,30 +44,12 @@ featured_talks:
 	image: '/assets/img/speaking/talk_pwa_lagos_2016.jpg'
 }
 - {
-	title: 'Going "Offline First"',
-	conference: 'Google Progressive Web Apps Roadshow',
-	location: 'Nairobi, Kenya',
-	date: '15 August 2016',
-	event_page_url: 'https://events.withgoogle.com/progressive-web-apps-ssa/',
-	slides_url: 'https://speakerdeck.com/ireade/going-offline-first',
-	image: '/assets/img/speaking/talk_pwa_nairobi_2016.jpg'
-}
-- {
 	title: 'Tips & Tricks in Front-End Development',
 	conference: 'forLoop Nigeria',
 	location: 'Lagos, Nigeria',
 	date: '16 June 2016',
 	slides_url: 'https://speakerdeck.com/ireade/tips-and-tricks-in-front-end-development',
 	image: '/assets/img/speaking/talk_forloop2.jpg'
-}
-- {
-	title: 'Using Jekyll for Rapid CSS Testing',
-	conference: 'JekyllConf',
-	location: 'Online',
-	date: '7 May 2016',
-	event_page_url: 'http://jekyllconf.com/',
-	slides_url: 'https://speakerdeck.com/ireade/using-jekyll-for-rapid-css-testing',
-	video_url: 'https://www.youtube.com/watch?v=PRKV5IGKF2c&list=PLrxYIq_0LFJdi2HJ6lnY4nm7ewu221hyS&index=2'
 }
 
 
