@@ -57,9 +57,22 @@ featured_talks:
 
 
 all_talks:
+# - {
+#   period: 'Upcoming Events',
+#   featured_image: '/assets/img/speaking/talk_gdg_2016.jpg',
+#   talks: [
+#       {
+#           title: "Web Accessibility: It Doesn't Have to be Hard",
+#           conference: 'Google Developer Experts Summit',
+#           location: 'Krakow, Poland',
+#           date: 'September 4 2017',
+#           event_page_url: 'https://events.withgoogle.com/experts-summit-2017'
+#       }
+#   ]
+# }
 - {
-  period: 'Upcoming Events',
-  featured_image: '/assets/img/speaking/talk_gdg_2016.jpg',
+  period: '2017',
+  featured_image: '/assets/img/speaking/talk_forloop_2017.jpg',
   talks: [
       {
           title: "Web Accessibility: It Doesn't Have to be Hard",
@@ -67,13 +80,7 @@ all_talks:
           location: 'Krakow, Poland',
           date: 'September 4 2017',
           event_page_url: 'https://events.withgoogle.com/experts-summit-2017'
-      }
-  ]
-}
-- {
-  period: '2017',
-  featured_image: '/assets/img/speaking/talk_forloop_2017.jpg',
-  talks: [
+      },
       {
           title: 'What about CSS? Progressive Enhancement & CSS',
           conference: 'Frontend Conf',
