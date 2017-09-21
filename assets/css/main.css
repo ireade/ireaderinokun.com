@@ -66,6 +66,7 @@ body {
   font-size: 1.4rem;
   line-height: 1.6;
   font-family: "Karla", sans-serif;
+  font-display: swap;
 }
 
 @media screen and (min-width: 600px) {

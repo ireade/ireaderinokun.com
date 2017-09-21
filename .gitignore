@@ -3,3 +3,4 @@ _site
 .DS_Store
 .idea/
 node_modules
+firebase-debug.log

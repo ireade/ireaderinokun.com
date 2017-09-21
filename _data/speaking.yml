@@ -1,4 +1,12 @@
+
 featured_talks:
+- {
+  title: "Web Accessibility: It Doesn't Have to be Hard",
+  conference: 'Google Developer Experts Summit',
+  location: 'Krakow, Poland',
+  date: 'September 4 2017',
+  event_page_url: 'https://events.withgoogle.com/experts-summit-2017'
+}
 - {
     title: 'Web Components: The Future of Web Applications',
     conference: 'Google I/O Extended',
@@ -43,16 +51,6 @@ featured_talks:
 	slides_url: 'https://speakerdeck.com/ireade/going-offline-first',
 	image: '/assets/img/speaking/talk_pwa_lagos_2016.jpg'
 }
-- {
-	title: 'Tips & Tricks in Front-End Development',
-	conference: 'forLoop Nigeria',
-	location: 'Lagos, Nigeria',
-	date: '16 June 2016',
-	slides_url: 'https://speakerdeck.com/ireade/tips-and-tricks-in-front-end-development',
-	image: '/assets/img/speaking/talk_forloop2.jpg'
-}
-
-
 
 
 
@@ -75,17 +73,24 @@ all_talks:
   featured_image: '/assets/img/speaking/talk_forloop_2017.jpg',
   talks: [
       {
+          title: 'Becoming a GDE & Overcoming Stage Fright',
+          conference: "Google WTM Leads Summit",
+          location: 'Lagos, Nigeria',
+          date: '21 September 2017',
+          slides_url: 'https://speakerdeck.com/ireade/becoming-a-gde-and-overcoming-stage-fright'
+      },
+      {
           title: "Web Accessibility: It Doesn't Have to be Hard",
           conference: 'Google Developer Experts Summit',
           location: 'Krakow, Poland',
-          date: 'September 4 2017',
+          date: '4 September 2017',
           event_page_url: 'https://events.withgoogle.com/experts-summit-2017'
       },
       {
           title: 'What about CSS? Progressive Enhancement & CSS',
           conference: 'Frontend Conf',
           location: 'Zurich, Switzerland',
-          date: 'September 1 2017',
+          date: '1 September 2017',
           event_page_url: 'https://www.frontendconf.ch',
           slides_url: 'https://speakerdeck.com/ireade/what-about-css-progressive-enhancement-and-css-updated',
       },

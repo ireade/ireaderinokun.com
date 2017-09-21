@@ -6,6 +6,7 @@ body {
   font-size: 1.4rem;
   line-height: 1.6;
   font-family: $sans-serif;
+  font-display: swap;
 
   @media screen and (min-width: $screen-med) {
     font-size: 1.6rem;
