@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "gulp"
+    "develop": "gulp",
+    "build": "hexo generate",
+    "deploy": "gulp"
   },
   "author": "Ire Aderinokun",
   "hexo": {
