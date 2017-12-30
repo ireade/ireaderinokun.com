@@ -1,0 +1,22 @@
+<section id="writing" class="site-page site-page--writing">
+  <header class="page-header">
+    <%- partial('_partial/icon/icon-pencil') %>
+      <h2 class="page-title">
+        I
+        <strong>write</strong> technical articles on my blog,
+        <a href="https://bitsofco.de">bitsofcode</a>
+      </h2>
+  </header>
+  <section class="excerpts">
+    <h3 class="sr-only">Article Excerpts</h3>
+    <% for (var index in site.data.writing.articles) { %>
+    <% var article = site.data.writing.articles[index]  %>
+    <article class="excerpt <% if (index > 3) { %>desktop-only<% } %>">
+      <h4 class="excerpt-title">
+        "<a href="<%= article.url %>" target="_blank" class="no-ul"><%= article.title %></a>"
+      </h4>
+      <p class="excerpt-content"><%- article.excerpt %></p>
+    </article>
+    <% } %>
+  </section>
+</section>

@@ -1,0 +1,13 @@
+<% 
+switch(page.title) {
+  case 'thanks': %>
+    <%- partial('_partial/page/thanks') %>
+    <% break;
+  case 'speaking': %>
+    <%- partial('_partial/page/speaking') %>
+    <% break;
+  default: %>
+    <%- page.content %>
+    <% break;
+} 
+%>

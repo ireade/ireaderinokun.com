@@ -1,0 +1,39 @@
+<section id="speaking" class="site-page site-page--speaking site-page--slideshow">
+  <div class="slideshow-background" style="background-image: url('/img/speaking/talk_gdg_2016.jpg')"></div>
+  <div>
+    <header class="page-header">
+      <%- partial('_partial/icon/icon-microphone') %>
+        <h2 class="page-title">
+          I give
+          <strong>talks</strong> about Front-End development, User Experience Design, or anything I find interesting
+        </h2>
+    </header>
+    <section class="excerpts excerpts-highlightEffect">
+      <h3 class="sr-only">Past Talks</h3>
+      <% for (var index in site.data.speaking.featured_talks) { %>
+      <% var talk = site.data.speaking.featured_talks[index]  %>
+      <article class="excerpt <% if (index > 3) { %>desktop-only<% } %>" 
+               <% if (talk.image) { %>data-slide="<%= talk.image %>" <% } %> >
+        <h4 class="excerpt-title"><%= talk.title %></h4>
+        <p class="excerpt-content">
+          <%= talk.conference %>. <%= talk.date %>. <%= talk.location %>
+          <br>
+          <% if (talk.event_page_url) { %>
+            <a href="<%= talk.event_page_url %>" target="_blank">Event Page</a> | 
+          <% } %> 
+          <% if (talk.slides_url) { %>
+            <a href="<%= talk.slides_url %>" target="_blank">Slides</a> |
+          <% } %> 
+          <% if (talk.video_url) { %>
+          <a href="<%= talk.video_url %>" target="_blank">Video</a>
+          <% } %>
+        </p>
+      </article>
+      <% } %>
+    </section>
+
+    <div>
+      <a href="/speaking/">View all talks &#10230;</a>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
+
+$monospace: 'Karla', sans-serif;
+$sans-serif: 'Karla', sans-serif;
+
+$screen-small: 450px;
+$screen-med: 600px;
+
+@mixin profileBackground() {
+  background-image: url('/img/reyjand.png');
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: 95% 95%;
+}

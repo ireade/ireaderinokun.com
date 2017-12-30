@@ -1,0 +1,39 @@
+<% for (var index in site.data.speaking.all_talks) { %>
+<% var period = site.data.speaking.all_talks[index]  %>
+<section id="speaking" class="site-page site-page--speaking">
+  <div class="slideshow-background" style="background-image: url(<%= period.featured_image %>)"></div>
+  <div>
+    <header class="page-header">
+      <%- partial('_partial/icon/icon-microphone') %>
+      <h2 class="page-title">
+        <%= period.period %>
+      </h2>
+    </header>
+    <section class="excerpts excerpts-highlightEffect">
+      <h3 class="sr-only">Talks in <%= period.period %></h3>
+      <% for (var i in period.talks) { %>
+        <% var talk = period.talks[i]  %>
+        <article class="excerpt" 
+          <% if (talk.image) { %>data-slide="<%= talk.image %>" <% } %> >
+          <h4 class="excerpt-title"><%= talk.title %></h4>
+          <p class="excerpt-content">
+            <%= talk.conference %>. <%= talk.date %>. <%= talk.location %>
+            <br>
+            <% if (talk.event_page_url) { %>
+              <a href="<%= talk.event_page_url %>" target="_blank">Event Page</a> | 
+            <% } %> 
+            <% if (talk.slides_url) { %>
+              <a href="<%= talk.slides_url %>" target="_blank">Slides</a> |
+            <% } %> 
+            <% if (talk.video_url) { %>
+            <a href="<%= talk.video_url %>" target="_blank">Video</a>
+            <% } %>
+          </p>
+        </article>
+        <% } %>
+    </section>
+  </div>
+</section>
+<% } %>
+
+<p style="display: block; margin-bottom: 20px;"><a href="/">&#10229; Go back home</a></p>

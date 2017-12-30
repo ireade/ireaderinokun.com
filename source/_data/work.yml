@@ -1,0 +1,44 @@
+roles: {
+  pm: {
+      name: 'Project Management',
+      color: '#2c3e50'
+  },
+  front-end: {
+      name: 'Front-End Development',
+      color: '#9b59b6'
+  },
+  design: {
+      name: 'Design',
+      color: '#27ae60'
+  },
+  logo: {
+        name: 'Logo',
+        color: '#27ae60'
+  }
+}
+
+
+
+work:
+- {
+  title: 'Studio of Modé',
+  roles: ['design', 'front-end', 'pm'],
+  excerpt: "Modé, the founder of the Studio of Modé, and I worked on the design together, and I developed the website on a combination of <strong>Wordpress</strong> and <strong>Shopify</strong>. The website is divided into three main parts - Modé's portfolfio (SEE), the studio and gallery space (STUDIO), and the online shop (SHOP). A key aspect of the design of the website was to make it seem as minimal as possible, despite the large amount of information avaiable. It was particularly important to have the website completely accessible on all devices due to the younger audience.",
+  type: 'desktop',
+  image: '/img/work/studioofmode.png'
+}
+- {
+  title: 'The bitsofcode PWA',
+  roles: ['front-end','design', 'pm'],
+  excerpt: 'This is a Progressive Web Application I designed and built for my blog, <a href="https://bitsofco.de">bitsofcode</a>. I built this application using <strong>plain JavaScript</strong>, making use of modern web APIs such as <strong>Service Worker</strong>, <strong>IndexedDB</strong>, and the <strong>Push API</strong> to emulate the features of a native mobile application. I wrote a series of articles on how I built this application, starting with <a href="https://bitsofco.de/bitsofcode-pwa-part-1-offline-first-with-service-worker/">how I used Service Worker to make it "Offline First"</a>.',
+  type: 'mobile',
+  image: '/img/work/bitsofcode.png',
+  mobile_footer: '/img/work/bitsofcode-footer.png'
+}
+- {
+  title: 'Supper Club',
+  roles: ['design', 'logo'],
+  excerpt: 'This was a design I did as a single-day project during a short course. The brief I was given was that “Supper Club” was a “five day night-time street food meetup” who was looking for a “one page site to advertise forthcoming Supper Club events”. The requirements for the website included: A Supper Club <strong>identity</strong>, the event duration and location details, a sign up form, and social links. I designed both the Supper Club logo and the one page website.',
+  type: 'desktop',
+  image: '/img/work/supperclub.png'
+}

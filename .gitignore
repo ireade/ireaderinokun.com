@@ -1,6 +1,7 @@
-_site
-.sass-cache
 .DS_Store
-.idea/
-node_modules
-firebase-debug.log
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
