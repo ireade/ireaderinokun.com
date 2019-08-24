@@ -1,0 +1,26 @@
+<h1 id="Service-Worker-Toolbox"><a href="#Service-Worker-Toolbox" class="headerlink" title="Service Worker Toolbox"></a>Service Worker Toolbox</h1><p><a href="https://travis-ci.org/GoogleChrome/sw-toolbox"><img src="https://travis-ci.org/GoogleChrome/sw-toolbox.svg?branch=master" alt="Build Status"></a> <a href="https://david-dm.org/googlechrome/sw-toolbox"><img src="https://david-dm.org/googlechrome/sw-toolbox.svg" alt="Dependency Status"></a> <a href="https://david-dm.org/googlechrome/sw-toolbox#info=devDependencies"><img src="https://david-dm.org/googlechrome/sw-toolbox/dev-status.svg" alt="devDependency Status"></a></p>
+<blockquote>
+<p>A collection of tools for <a href="https://slightlyoff.github.io/ServiceWorker/spec/service_worker/">service workers</a></p>
+</blockquote>
+<p>Service Worker Toolbox provides some simple helpers for use in creating your own service workers. Specifically, it provides common caching patterns and an <a href="https://googlechrome.github.io/sw-toolbox/docs/master/tutorial-api#expressive-approach">expressive approach</a> to using those strategies for runtime requests. If you’re not sure what service workers are or what they are for, start with <a href="https://github.com/slightlyoff/ServiceWorker/blob/master/explainer.md">the explainer doc</a>.</p>
+<h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><p>Service Worker Toolbox is available through Bower, npm or direct from GitHub:</p>
+<p><code>bower install --save sw-toolbox</code></p>
+<p><code>npm install --save sw-toolbox</code></p>
+<p><code>git clone https://github.com/GoogleChrome/sw-toolbox.git</code></p>
+<h3 id="Register-your-service-worker"><a href="#Register-your-service-worker" class="headerlink" title="Register your service worker"></a>Register your service worker</h3><p>From your registering page, register your service worker in the normal way. For example:</p>
+<pre><code class="javascript">navigator.serviceWorker.register(<span class="string">'my-service-worker.js'</span>);
+</code></pre>
+<p>As implemented in Chrome 40 or later, a service worker must exist at the root of the scope that you intend it to control, or higher. So if you want all of the pages under <code>/myapp/</code> to be controlled by the worker, the worker script itself must be served from either <code>/</code> or <code>/myapp/</code>. The default scope is the containing path of the service worker script.</p>
+<p>For even lower friction you can instead include the Service Worker Toolbox companion script in your HTML as shown below. Be aware that this is not customizable. If you need to do anything fancier than registering with a default scope, you’ll need to use the standard registration.</p>
+<pre><code class="html"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">"/path/to/sw-toolbox/companion.js"</span> <span class="attr">data-service-worker</span>=<span class="string">"my-service-worker.js"</span>&gt;</span><span class="undefined"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span>
+</code></pre>
+<h3 id="Add-Service-Worker-Toolbox-to-your-service-worker-script"><a href="#Add-Service-Worker-Toolbox-to-your-service-worker-script" class="headerlink" title="Add Service Worker Toolbox to your service worker script"></a>Add Service Worker Toolbox to your service worker script</h3><p>In your service worker you just need to use <code>importScripts</code> to load Service Worker Toolbox</p>
+<pre><code class="javascript">importScripts(<span class="string">'bower_components/sw-toolbox/sw-toolbox.js'</span>); <span class="comment">// Update path to match your own setup</span>
+</code></pre>
+<h3 id="Use-the-toolbox"><a href="#Use-the-toolbox" class="headerlink" title="Use the toolbox"></a>Use the toolbox</h3><p>To understand how to use the toolbox read the <a href="https://googlechrome.github.io/sw-toolbox/docs/master/tutorial-usage">usage</a> and <a href="https://googlechrome.github.io/sw-toolbox/docs/master/tutorial-api">api</a> documentation.</p>
+<h2 id="Support"><a href="#Support" class="headerlink" title="Support"></a>Support</h2><p>If you’ve found an error in this library, please file an issue at: <a href="https://github.com/GoogleChrome/sw-toolbox/issues">https://github.com/GoogleChrome/sw-toolbox/issues</a>.</p>
+<p>Patches are encouraged, and may be submitted by forking this project and submitting a pull request through GitHub.</p>
+<h2 id="License"><a href="#License" class="headerlink" title="License"></a>License</h2><p>Copyright 2015 Google, Inc.</p>
+<p>Licensed under the <a href="LICENSE">Apache License, Version 2.0</a> (the “License”);<br>you may not use this file except in compliance with the License. You may<br>obtain a copy of the License at</p>
+<p>   <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a></p>
+<p>Unless required by applicable law or agreed to in writing, software<br>distributed under the License is distributed on an “AS IS” BASIS,<br>WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<br>See the License for the specific language governing permissions and<br>limitations under the License.</p>

@@ -1,0 +1,59 @@
+/* Variables ****************************** */
+
+:root {
+    --theme-colour: #D33257;
+    --theme-colour-light: #F05377;
+    --theme-colour-lighter: #EB8FA4;
+    --secondary-colour: #EFC800;
+
+    --h-padding: 25px;
+    --v-padding: 15px;
+}
+
+body {
+    background-color: #F0F0F0;
+}
+
+/* Typography ****************************** */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+p {
+    display: block;
+    margin-bottom: 1em;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: 700;
+}
+
+a {
+    text-decoration-style: wavy;
+    color: inherit;
+    position: relative;
+}
+
+/* Layout ****************************** */
+
+main {
+    margin: 30px;
+    margin: 10vh 10vw;
+    max-width: 400px;
+}
+
+.social a {
+    margin-right: 1em;
+}
