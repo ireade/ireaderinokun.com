@@ -10,9 +10,6 @@
     --v-padding: 15px;
 }
 
-body {
-    background-color: #F0F0F0;
-}
 
 /* Typography ****************************** */
 
@@ -21,10 +18,23 @@ html {
 }
 
 body {
-    font-family: "Overpass", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 1.6;
+    font-family: 'Playfair Display', serif;
+    
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 14vw;
+    display: block;
+    text-align: center;
+    font-weight: lighter;
+    line-height: 1;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 p {
@@ -41,7 +51,6 @@ strong {
 }
 
 a {
-    text-decoration-style: wavy;
     color: inherit;
     position: relative;
 }
@@ -51,9 +60,9 @@ a {
 main {
     margin: 30px;
     margin: 10vh 10vw;
-    max-width: 400px;
+    max-width: 600px;
 }
 
 .social a {
-    margin-right: 1em;
+    margin-right: 0.6em;
 }
