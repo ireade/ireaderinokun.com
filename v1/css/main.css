@@ -1,0 +1,79 @@
+/* Variables ****************************** */
+
+:root {
+    --theme-colour: #D33257;
+    --theme-colour-light: #F05377;
+    --theme-colour-lighter: #EB8FA4;
+    --secondary-colour: #EFC800;
+
+    --h-padding: 25px;
+    --v-padding: 15px;
+}
+
+
+/* Typography ****************************** */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 14vw;
+    display: block;
+    text-align: center;
+    font-weight: lighter;
+    line-height: 1;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+p {
+    display: block;
+    margin-bottom: 1em;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: 700;
+}
+
+a {
+    color: inherit;
+    position: relative;
+}
+
+/* Layout ****************************** */
+
+main {
+    margin: 30px;
+    margin: 10vh 10vw;
+    max-width: 600px;
+}
+
+.social a {
+    margin-right: 0.6em;
+}
+
+.list {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.list li {
+    margin-bottom: 0.5em;
+}
